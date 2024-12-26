@@ -1,0 +1,322 @@
+/* Reset and base styles  */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+$black:rgba(22, 22, 31, 1);
+$red:rgba(222, 0, 43, 1);
+$redtext:rgba(204, 34, 46, 1);
+$gray:rgba(142, 149, 166, 1);
+$yellow:rgba(241, 169, 53, 1);
+
+.container {
+    margin: 0 auto;
+    width: 1080px;
+}
+
+/* HEADER */
+
+.header {
+    .logo {
+        padding-right: 15px;
+    }
+    &__top {
+        padding: 15px 0 14px 0;
+        border-bottom: 1px solid rgba(226, 229, 242, 1);
+        display: flex;
+        justify-content: space-between;
+        &-left {
+            display: flex;
+            column-gap: 30px;
+            align-items: center;
+        }
+        &-right {
+            display: flex;
+            column-gap: 25.69px;
+            align-items: center;
+        }
+    }
+    &__location {
+        display: flex;
+        width: 109px;
+        padding: 10px 15px;
+        border: 1px solid $red;
+        color: $red;
+        border-radius: 6px;
+        font-size: 16px;
+        line-height: 19.09px;
+        font-weight: 500;
+        &-icon {
+            margin-right: 8px;
+        }
+    }
+    &__nav {
+        &-list {
+            display: flex;
+            column-gap: 30px;
+            font-size: 16px;
+            line-height: 19.09px;
+            font-weight: 500;
+            color: $black;
+        }
+    }
+    &__social {
+        display: flex;
+        column-gap: 15px;
+    }
+    &__call {
+        display: flex;
+        align-items: center;
+        column-gap: 12px;
+        color: $redtext;
+        font-size: 16px;
+        line-height: 19.09px;
+        font-weight: 500;
+        &-icon {
+            max-width: 19px;
+        }
+    }
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 13px;
+        &-left {
+            display: flex;
+            column-gap: 15px;
+        }
+        &-right {
+            display: flex;
+            column-gap: 23px;
+        }
+    }
+    &__field {
+        display: flex;
+        position: relative;
+        &-icon {
+            padding: 10px;
+            border-radius: 6px;
+            background-color: $red;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        &-input {
+            width: 220px;
+            height: 40px;
+            padding-left: 55px;
+            background-color: rgba(232, 234, 243, 1);
+            border-radius: 6px;
+            font-size: 16px;
+            line-height: 19.09px;
+            font-weight: 500;
+        }
+        &-input::placeholder {
+            color: $gray;
+        }
+    }
+    &__personal {
+        display: flex;
+        column-gap: 30px;
+        &-block {
+            text-align: center;
+        }
+        &-title {
+            padding-top: 3px;
+            font-size: 14px;
+            line-height: 16.71px;
+            font-weight: 500;
+            color: $black;
+            &--active {
+                color: $redtext;
+            }
+        }
+        &-icon--active {
+            fill: $redtext;
+        }
+    }
+}
+
+/* FOOTER */
+
+.footer {
+    &__inner {
+        display: flex;
+        column-gap: 60px;
+        padding-top: 30px;
+        border-top: 1px solid rgba(226, 229, 242, 1);
+    }
+    &__descrip {
+        font-size: 16px;
+        line-height: 19.09px;
+        color: $gray;
+        padding: 20px 0 25px 0;
+        max-width: 256px;
+    }
+    &__social {
+        display: flex;
+        column-gap: 10px;
+        &-telegram {
+            padding: 7px 5.61px 7px 5.39px;
+            background-color: rgba(204, 34, 46, 1);
+            border-radius: 4px;
+            width: 26px;
+            height: 26px;
+        }
+        &-vk {
+            padding: 9.14px 4.92px 8.05px 4.22px;
+            background-color: rgba(204, 34, 46, 1);
+            border-radius: 4px;
+            width: 26px;
+            height: 26px;
+        }
+    }
+    &__nav {
+        display: flex;
+        column-gap: 51px;
+    }
+    &__item {
+        font-size: 16px;
+        line-height: 19.09px;
+        color: $black;
+        padding-bottom: 10px;
+        &-title {
+            font-size: 18px;
+            line-height: 21.48px;
+            font-weight: 600;
+            color: $black;
+            padding-bottom: 10px;
+        }
+    }
+    &__list {
+        max-width: 181px;
+    }
+    &__call {
+        font-size: 16px;
+        line-height: 19.09px;
+        color: $redtext;
+        text-align: right;
+        &-title {
+            font-size: 18px;
+            line-height: 21.48px;
+            font-weight: 600;
+            color: $black;
+            padding-bottom: 10px;
+        }
+    }
+    &__bottom {
+        padding: 20px 0 30px 0;
+        font-size: 16px;
+        line-height: 19.09px;
+        color: $gray;
+        text-align: center;
+    }
+}
+
+.logo {
+    max-width: 184px;
+}
+.btn-white {
+    font-size: 16px;
+    line-height: 19.09px;
+    font-weight: 500;
+    color: $red;
+    border: 1px solid $red;
+    border-radius: 6px;
+    padding: 10px 15px 11px 15px;
+    max-height: 40px;
+}
+.btn-red {
+    font-size: 16px;
+    line-height: 19.09px;
+    font-weight: 500;
+    padding: 10px 15px 11px 15px;
+    background-color: $red;
+    border-radius: 6px;
+    color: #fff;
+    max-height: 40px;
+}
