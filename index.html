@@ -96,8 +96,8 @@
                     <div class="products__info">
                         <div class="products__top">
                             <div class="products__top-left">
-                            <p class="products__top-hit">Хит</p>
-                            <p class="products__top-advice">Советуем</p>
+                            <p class="hit">Хит</p>
+                            <p class="advice">Советуем</p>
                             </div>
                             <svg class="products__info-icon products__info-icon--active" width="18" height="21" viewBox="0 0 18 21" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0 1.49222C0 0.668092 0.688793 0 1.53846 0H16.4615C17.3112 0 18 0.668091 18 1.49222V20.452C18 20.8815 17.513 21.1436 17.1373 20.9162L9.29861 16.1724C9.11586 16.0618 8.88414 16.0618 8.70139 16.1724L0.862708 20.9162C0.486973 21.1436 0 20.8815 0 20.452V1.49222Z"/>
@@ -140,8 +140,8 @@
                     <div class="products__info">
                         <div class="products__top">
                             <div class="products__top-left">
-                            <p class="products__top-hit">Хит</p>
-                            <p class="products__top-advice">Советуем</p>
+                            <p class="hit">Хит</p>
+                            <p class="advice">Советуем</p>
                             </div>
                             <svg class="products__info-icon" width="18" height="21" viewBox="0 0 18 21" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0 1.49222C0 0.668092 0.688793 0 1.53846 0H16.4615C17.3112 0 18 0.668091 18 1.49222V20.452C18 20.8815 17.513 21.1436 17.1373 20.9162L9.29861 16.1724C9.11586 16.0618 8.88414 16.0618 8.70139 16.1724L0.862708 20.9162C0.486973 21.1436 0 20.8815 0 20.452V1.49222Z"/>
@@ -189,7 +189,7 @@
             <div class="product__heading">
                 <div class="product__heading-inner">
                     <h2 class="product__title">Название товара</h2>
-                    <h5 class="product__code">#К00023764</h5>
+                    <h5 class="product__code product__code--active">#К00023764</h5>
                     <h5 class="product__code">#К00023764</h5>
                 </div>
                 <div class="product__rating-inner">
@@ -200,8 +200,26 @@
     
             <div class="content">
                 <div class="content__inner">
-                    <div class="content__main">
-    
+                    <div class="content__product">
+                        <div class="content__product-top">
+                            <div class="content__product-scroll"></div>
+                            <div class="content__product-main">
+                                <div class="content__product-main-top">
+                                <div class="hit">Хит</div>
+                                <div class="advice">Советуем</div>
+                            </div>
+                                <img src="img/product-main.png" alt="photo" class="content__product-main-img">
+                            </div>
+                        </div>
+                        <div class="content__product-bottom">
+                            <nav class="content__product-nav">
+                                <button class="content__product-nav-btn">Описание</button>
+                                <button class="content__product-nav-btn">Характеристики</button>
+                                <button class="content__product-nav-btn">Отзывы <span>(9)</span></button>
+                                <button class="content__product-nav-btn">Вопрос ответ <span>(9)</span></button>
+                                <button class="content__product-nav-btn">Документация <span>(9)</span></button>
+                            </nav>
+                        </div>
                     </div>
     
                     <div class="content__optionally">
@@ -217,8 +235,15 @@
                                     2000
                                 </span>
                             </div>
-                            <button class="favourites"><img src="icon/favourites.svg" alt="">В избранное</button>
-                            <button class="share"><img src="icon/share.svg" alt=""></button>
+                            <div class="content__optionally-btn">
+                            <button class="btn-red">
+                                <svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 1.49222C0 0.668092 0.688793 0 1.53846 0H16.4615C17.3112 0 18 0.668091 18 1.49222V20.452C18 20.8815 17.513 21.1436 17.1373 20.9162L9.29861 16.1724C9.11586 16.0618 8.88414 16.0618 8.70139 16.1724L0.862708 20.9162C0.486973 21.1436 0 20.8815 0 20.452V1.49222Z" fill="#fff"/>
+                                </svg>
+                                <p>В избранное</p>
+                            </button>
+                            <button class="btn-share"><img src="icon/share.svg" alt=""></button>
+                        </div>
                         </div>
                         <div class="content__optionally-available">
                            
@@ -228,30 +253,31 @@
                            
                         </div>
                     <div class="company">
+                        <div class="rectangle"></div>
                         <span class="company__name">Компания</span>
                         <div class="company__inner">
-                            <img src="" alt="">
+                            <img src="icon/mk.svg" alt="logo">
                             <div class="company__property">
-                                <h1 class="company__title">
-
-                                </h1>
+                                <h1 class="company__title">Название компании</h1>
                                 <div class="company__rating">
                                     <span class="company__rating-value">4.6</span>
-                                    <img class="company__rating-img" src="" alt="">
+                                    <img class="company__rating-img" src="icon/Star.svg" alt="star">
+                                    <img class="company__rating-img" src="icon/Star.svg" alt="star">
+                                    <img class="company__rating-img" src="icon/Star.svg" alt="star">
+                                    <img class="company__rating-img" src="icon/Star.svg" alt="star">
+                                    <img class="company__rating-img" src="icon/Star.svg" alt="star">
                                     <span class="company__rating-comment">300 отзывов</span>
                                 </div>
                                 <span class="company__quantity">
                                     Кол-во товаров: 200
                                 </span>
-                                <p class="company__description">
+                                <p class="description-text">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
                                 </p>
+                                <a class="btn-red">Показать товары компании</a>
                             </div>
                         </div>
                     </div>
-                    <a class="content__optionally-btn">
-                        Показать товары компании
-                    </a>
                     </div>
     
                 </div>
@@ -261,7 +287,7 @@
     </section>
 
     <footer class="footer">
-        
+
         <div class="container">
             <div class="footer__inner">
                 <div class="footer__info">

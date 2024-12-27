@@ -347,24 +347,6 @@ $yellow:rgba(241, 169, 53, 1);
 			display: flex;
 			column-gap: 5px;
 		}
-		&-hit {
-			font-size: 14px;
-			line-height: 16.71px;
-			font-weight: 600;
-			color: #fff;
-			background-color: $red;
-			padding: 3px 10px;
-			border-radius: 4px;
-		}
-		&-advice {
-			font-size: 14px;
-			line-height: 16.71px;
-			font-weight: 600;
-			color: #fff;
-			background-color: $yellow;
-			padding: 3px 10px;
-			border-radius: 4px;
-		}
 	}
 	&__flex {
 		display: flex;
@@ -400,6 +382,164 @@ $yellow:rgba(241, 169, 53, 1);
 	}
 }
 
+/* PRODUCT */
+
+.product {
+    .description-text {
+        max-width: 355px;
+        padding-bottom: 20px;
+    }
+    .btn-red {
+        display: flex;
+        column-gap: 8px;
+        max-height: 30px;
+        padding: 5px 10px 6px 10px;
+        align-items: center;
+    }
+    &__rating {
+        display: flex;
+        column-gap: 6px;
+        font-size: 16px;
+        line-height: 22.4px;
+        color: $gray;
+        &-inner {
+            display: flex;
+            column-gap: 15px;
+        }
+    }
+    &__heading-inner {
+        display: flex;
+        column-gap: 10px;
+    }
+    &__title {
+        font-size: 16px;
+        line-height: 19.09px;
+        font-weight: 600;
+        color: $black;
+    }
+    &__code {
+        font-size: 16px;
+        line-height: 19.09px;
+        font-weight: 600;
+        color: $gray;
+        &--active {
+            color: $red;
+        }
+    }
+}
+.price {
+    display: flex;
+    align-items: end;
+    &__new {
+    font-size: 28px;
+    line-height: 33.41px;
+    font-weight: 700;
+    color: $black;
+    }
+    &__old {
+        font-size: 18px;
+        line-height: 21.48px;
+        font-weight: 700;
+        color: $gray;
+    }
+}
+.rub {
+    font-size: 28px;
+    line-height: 33.41px;
+    font-weight: 700;
+    color: $black;
+}
+.content {
+    &__optionally {
+        &-heading {
+            display: flex;
+            justify-content: space-between;
+        }
+        &-btn {
+            display: flex;
+            column-gap: 5px;
+        }
+    }
+    &__product {
+        &-main {
+            &-top {
+                display: flex;
+                column-gap: 5px;
+            }
+        }
+        &-nav {
+            display: flex;
+            padding-bottom: 13px;
+            border-bottom: 1px solid rgba(226, 229, 242, 1);
+            &-btn {
+                font-size: 15px;
+                line-height: 17.9px;
+                font-weight: 600;
+                color: $black;
+                padding-right: 19px;
+            }
+            &-btn:last-child {
+                padding-right: 0;
+            }
+            &-btn:nth-child(4) {
+                padding-right: 17px;
+            }
+            &-btn span {
+                color: $red;
+            }
+        }
+    }
+}
+.company {
+    position: relative;
+    &__name {
+        font-size: 22px;
+        line-height: 26.25px;
+        font-weight: 700;
+        color: $black;
+        padding: 25px 0 20px 0;
+    }
+    &__title {
+        font-size: 18px;
+        line-height: 21.48px;
+        font-weight: 700;
+        color: $black;
+        padding-bottom: 8px;
+    }
+    &__rating {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        line-height: 22.4px;
+        color: $black;
+        padding-bottom: 10px;
+        &-value {
+            padding-right: 5px;
+        }
+        &-comment {
+            padding-left: 15px;
+        }
+    }
+    &__quantity {
+        font-size: 16px;
+        line-height: 19.09px;
+        color: $black;
+    }
+    &__inner {
+        display: flex;
+        column-gap: 15px;
+    }
+}
+.rectangle {
+    width: 100px;
+    height: 100px;
+    border-radius: 7px;
+    background-color: rgba(232, 234, 243, 1);
+    position: absolute;
+    top: 59px;
+    left: 0;
+    z-index: -1;
+}
 .logo {
     max-width: 184px;
 }
@@ -422,4 +562,35 @@ $yellow:rgba(241, 169, 53, 1);
     border-radius: 6px;
     color: #fff;
     max-height: 40px;
+    max-width: 230px;
+}
+.btn-share {
+    padding: 7px 8px;
+    background-color: $red;
+    border-radius: 6px;
+    color: #fff;
+    max-height: 30px;
+}
+.description-text {
+    font-size: 18px;
+    line-height: 21.48px;
+    color: $gray;
+}
+.hit {
+    font-size: 14px;
+	line-height: 16.71px;
+	font-weight: 600;
+	color: #fff;
+	background-color: $red;
+	padding: 3px 10px;
+	border-radius: 4px;
+}
+.advice {
+    font-size: 14px;
+	line-height: 16.71px;
+	font-weight: 600;
+	color: #fff;
+	background-color: $yellow;
+	padding: 3px 10px;
+	border-radius: 4px;
 }

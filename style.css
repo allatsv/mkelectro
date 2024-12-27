@@ -345,24 +345,6 @@ legend {
   -moz-column-gap: 5px;
        column-gap: 5px;
 }
-.products__top-hit {
-  font-size: 14px;
-  line-height: 16.71px;
-  font-weight: 600;
-  color: #fff;
-  background-color: rgb(222, 0, 43);
-  padding: 3px 10px;
-  border-radius: 4px;
-}
-.products__top-advice {
-  font-size: 14px;
-  line-height: 16.71px;
-  font-weight: 600;
-  color: #fff;
-  background-color: rgb(241, 169, 53);
-  padding: 3px 10px;
-  border-radius: 4px;
-}
 .products__flex {
   display: flex;
   justify-content: space-between;
@@ -396,6 +378,166 @@ legend {
   right: 15px;
 }
 
+/* PRODUCT */
+.product .description-text {
+  max-width: 355px;
+  padding-bottom: 20px;
+}
+.product .btn-red {
+  display: flex;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  max-height: 30px;
+  padding: 5px 10px 6px 10px;
+  align-items: center;
+}
+.product__rating {
+  display: flex;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+  font-size: 16px;
+  line-height: 22.4px;
+  color: rgb(142, 149, 166);
+}
+.product__rating-inner {
+  display: flex;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+.product__heading-inner {
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.product__title {
+  font-size: 16px;
+  line-height: 19.09px;
+  font-weight: 600;
+  color: rgb(22, 22, 31);
+}
+.product__code {
+  font-size: 16px;
+  line-height: 19.09px;
+  font-weight: 600;
+  color: rgb(142, 149, 166);
+}
+.product__code--active {
+  color: rgb(222, 0, 43);
+}
+
+.price {
+  display: flex;
+  align-items: end;
+}
+.price__new {
+  font-size: 28px;
+  line-height: 33.41px;
+  font-weight: 700;
+  color: rgb(22, 22, 31);
+}
+.price__old {
+  font-size: 18px;
+  line-height: 21.48px;
+  font-weight: 700;
+  color: rgb(142, 149, 166);
+}
+
+.rub {
+  font-size: 28px;
+  line-height: 33.41px;
+  font-weight: 700;
+  color: rgb(22, 22, 31);
+}
+
+.content__optionally-heading {
+  display: flex;
+  justify-content: space-between;
+}
+.content__optionally-btn {
+  display: flex;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+}
+.content__product-main-top {
+  display: flex;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+}
+.content__product-nav {
+  display: flex;
+  padding-bottom: 13px;
+  border-bottom: 1px solid rgb(226, 229, 242);
+}
+.content__product-nav-btn {
+  font-size: 15px;
+  line-height: 17.9px;
+  font-weight: 600;
+  color: rgb(22, 22, 31);
+  padding-right: 19px;
+}
+.content__product-nav-btn:last-child {
+  padding-right: 0;
+}
+.content__product-nav-btn:nth-child(4) {
+  padding-right: 17px;
+}
+.content__product-nav-btn span {
+  color: rgb(222, 0, 43);
+}
+
+.company {
+  position: relative;
+}
+.company__name {
+  font-size: 22px;
+  line-height: 26.25px;
+  font-weight: 700;
+  color: rgb(22, 22, 31);
+  padding: 25px 0 20px 0;
+}
+.company__title {
+  font-size: 18px;
+  line-height: 21.48px;
+  font-weight: 700;
+  color: rgb(22, 22, 31);
+  padding-bottom: 8px;
+}
+.company__rating {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 22.4px;
+  color: rgb(22, 22, 31);
+  padding-bottom: 10px;
+}
+.company__rating-value {
+  padding-right: 5px;
+}
+.company__rating-comment {
+  padding-left: 15px;
+}
+.company__quantity {
+  font-size: 16px;
+  line-height: 19.09px;
+  color: rgb(22, 22, 31);
+}
+.company__inner {
+  display: flex;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+
+.rectangle {
+  width: 100px;
+  height: 100px;
+  border-radius: 7px;
+  background-color: rgb(232, 234, 243);
+  position: absolute;
+  top: 59px;
+  left: 0;
+  z-index: -1;
+}
+
 .logo {
   max-width: 184px;
 }
@@ -420,4 +562,39 @@ legend {
   border-radius: 6px;
   color: #fff;
   max-height: 40px;
+  max-width: 230px;
+}
+
+.btn-share {
+  padding: 7px 8px;
+  background-color: rgb(222, 0, 43);
+  border-radius: 6px;
+  color: #fff;
+  max-height: 30px;
+}
+
+.description-text {
+  font-size: 18px;
+  line-height: 21.48px;
+  color: rgb(142, 149, 166);
+}
+
+.hit {
+  font-size: 14px;
+  line-height: 16.71px;
+  font-weight: 600;
+  color: #fff;
+  background-color: rgb(222, 0, 43);
+  padding: 3px 10px;
+  border-radius: 4px;
+}
+
+.advice {
+  font-size: 14px;
+  line-height: 16.71px;
+  font-weight: 600;
+  color: #fff;
+  background-color: rgb(241, 169, 53);
+  padding: 3px 10px;
+  border-radius: 4px;
 }/*# sourceMappingURL=style.css.map */
