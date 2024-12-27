@@ -205,18 +205,20 @@ $yellow:rgba(241, 169, 53, 1);
         &-block {
             text-align: center;
         }
+        &-block:hover {
+            color: $redtext;
+            fill: $redtext;
+            cursor: pointer;
+            p {
+                color: $redtext;
+            }
+        }
         &-title {
             padding-top: 3px;
             font-size: 14px;
             line-height: 16.71px;
             font-weight: 500;
             color: $black;
-            &--active {
-                color: $redtext;
-            }
-        }
-        &-icon--active {
-            fill: $redtext;
         }
     }
 }
@@ -422,14 +424,18 @@ $yellow:rgba(241, 169, 53, 1);
         line-height: 19.09px;
         font-weight: 600;
         color: $gray;
-        &--active {
-            color: $red;
-        }
+    }
+    &__code:hover {
+        color: $red;
+        cursor: pointer;
     }
 }
 .price {
+    position: relative;
     display: flex;
     align-items: end;
+    column-gap: 7px;
+    padding-bottom: 20px;
     &__new {
     font-size: 28px;
     line-height: 33.41px;
@@ -442,6 +448,15 @@ $yellow:rgba(241, 169, 53, 1);
         font-weight: 700;
         color: $gray;
     }
+    &__line {
+        width: 38.76px;
+        height: 1px;
+        background-color: $red;
+        transform: rotate(-15.46deg);
+        position: absolute;
+        top: 22px;
+        right: -1px;
+    }
 }
 .rub {
     font-size: 28px;
@@ -450,6 +465,9 @@ $yellow:rgba(241, 169, 53, 1);
     color: $black;
 }
 .content {
+    &__inner {
+        display: flex;
+    }
     &__optionally {
         &-heading {
             display: flex;
@@ -458,6 +476,59 @@ $yellow:rgba(241, 169, 53, 1);
         &-btn {
             display: flex;
             column-gap: 5px;
+        }
+        &-available {
+            display: flex;
+            column-gap: 93px;
+            padding: 10px 15px 11px 15px;
+            border: 1px solid rgba(223, 227, 238, 1);
+            border-radius: 6px;
+            font-size: 16px;
+            line-height: 19.09px;
+            color: $black;
+            margin-bottom: 20px;
+        }
+        &-available p:last-child {
+            font-size: 14px;
+            line-height: 16.71px;
+            color: $red;
+        }
+        &-choice {
+            display: flex;
+            padding-bottom: 25px;
+            .btn-white {
+                width: 148px;
+                text-align: center;
+            }
+            .btn-red {
+                max-width: 81px;
+                max-height: 40px;
+                margin-right: 10px;
+            }
+        }
+        &-counter {
+            display: flex;
+            align-items: center;
+            padding-right: 15px;
+            &-btn {
+                padding: 14px 10px;
+                border-top-left-radius: 6px;
+                border-bottom-left-radius: 6px;
+                background-color: $red;
+                max-height: 40px;
+            }
+            &-btn:last-child {
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+                border-top-right-radius: 6px;
+                border-bottom-right-radius: 6px;
+            }
+            &-number {
+                padding: 9px 15px 10px 15px;
+                background-color: rgba(232, 234, 243, 1);
+                font-size: 18px;
+                line-height: 21.48px;
+            }
         }
     }
     &__product {
@@ -497,7 +568,6 @@ $yellow:rgba(241, 169, 53, 1);
         line-height: 26.25px;
         font-weight: 700;
         color: $black;
-        padding: 25px 0 20px 0;
     }
     &__title {
         font-size: 18px;
@@ -528,6 +598,7 @@ $yellow:rgba(241, 169, 53, 1);
     &__inner {
         display: flex;
         column-gap: 15px;
+        padding: 20px 0 15px 0;
     }
 }
 .rectangle {
@@ -536,7 +607,7 @@ $yellow:rgba(241, 169, 53, 1);
     border-radius: 7px;
     background-color: rgba(232, 234, 243, 1);
     position: absolute;
-    top: 59px;
+    top: 37px;
     left: 0;
     z-index: -1;
 }
