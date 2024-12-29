@@ -1,432 +1,1197 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header class="header">
-        <div class="container">
+      <div class="container">
         <div class="header__top">
-            <div class="header__top-left">
-                <button class="header__location">
-                    <img src="icon/locate.svg" alt="#" class="header__location-icon">
-                    <p>Москва</p>
-                </button>
-                <nav class="header__nav">
-                    <ul class="header__nav-list">
-                        <li class="header__nav-item">Распродажа</li>
-                        <li class="header__nav-item">Акции</li>
-                        <li class="header__nav-item">О компании</li>
-                        <li class="header__nav-item">Доставка</li>
-                        <li class="header__nav-item">Контакты</li>
-                    </ul>
-                </nav>
+          <div class="header__top-left">
+            <button class="header__location">
+              <img
+                src="icon/locate.svg"
+                alt="#"
+                class="header__location-icon"
+              />
+              <p>Москва</p>
+            </button>
+            <nav class="header__nav">
+              <ul class="header__nav-list">
+                <li class="header__nav-item">Распродажа</li>
+                <li class="header__nav-item">Акции</li>
+                <li class="header__nav-item">О компании</li>
+                <li class="header__nav-item">Доставка</li>
+                <li class="header__nav-item">Контакты</li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__top-right">
+            <div class="header__social">
+              <a href="#"
+                ><img
+                  src="icon/telegram.svg"
+                  alt="telegram"
+                  class="header__social-icon"
+              /></a>
+              <a href="#"
+                ><img
+                  src="icon/youtube.svg"
+                  alt="youtube"
+                  class="header__social-icon"
+              /></a>
+              <a href="#"
+                ><img src="icon/vk.svg" alt="vk" class="header__social-icon"
+              /></a>
             </div>
-            <div class="header__top-right">
-                <div class="header__social">
-                    <a href="#"><img src="icon/telegram.svg" alt="telegram" class="header__social-icon"></a>
-                    <a href="#"><img src="icon/youtube.svg" alt="youtube" class="header__social-icon"></a>
-                    <a href="#"><img src="icon/vk.svg" alt="vk" class="header__social-icon"></a>
-                </div>
-                <div class="header__call">
-                    <img src="icon/call.svg" alt="call" class="header__call-icon">
-                    <div class="header__call-numbers">
-                        <p>8 800 100-54-41</p>
-                        <p>8 984 707-97-98</p>
-                    </div>
-                </div>
+            <div class="header__call">
+              <img src="icon/call.svg" alt="call" class="header__call-icon" />
+              <div class="header__call-numbers">
+                <p>8 800 100-54-41</p>
+                <p>8 984 707-97-98</p>
+              </div>
             </div>
+          </div>
         </div>
         <div class="header__bottom">
-            <div class="header__bottom-left">
-                <a href="index.html"><img src="icon/logo.svg" alt="logo" class="logo"></a>
-                <a href="#" class="btn-white">Свяжитесь с нами</a>
-                <button class="btn-red">
-                    <img src="" alt="" class="header__catalog-icon">
-                    <p>Каталог</p>
-                </button>
-                <div class="header__field">
-                    <a href="#"><img src="icon/search.svg" alt="search" class="header__field-icon"></a>
-                    <input placeholder="Введите текст" type="text" class="header__field-input">
-                </div>
+          <div class="header__bottom-left">
+            <a href="index.html"
+              ><img src="icon/logo.svg" alt="logo" class="logo"
+            /></a>
+            <a href="#" class="btn-white">Свяжитесь с нами</a>
+            <button class="btn-red">
+              <img src="" alt="" class="header__catalog-icon" />
+              <p>Каталог</p>
+            </button>
+            <div class="header__field">
+              <a href="#"
+                ><img
+                  src="icon/search.svg"
+                  alt="search"
+                  class="header__field-icon"
+              /></a>
+              <input
+                placeholder="Введите текст"
+                type="text"
+                class="header__field-input"
+              />
             </div>
-            <div class="header__bottom-right">
-                <div class="header__personal">
-                    <div class="header__personal-block">
-                        <svg class="header__personal-icon" width="18" height="21" viewBox="0 0 18 21" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 1.49222C0 0.668092 0.688793 0 1.53846 0H16.4615C17.3112 0 18 0.668091 18 1.49222V20.452C18 20.8815 17.513 21.1436 17.1373 20.9162L9.29861 16.1724C9.11586 16.0618 8.88414 16.0618 8.70139 16.1724L0.862708 20.9162C0.486973 21.1436 0 20.8815 0 20.452V1.49222Z"/>
-                        </svg>
-                        <p class="header__personal-title">Избранное</p>
-                    </div>
-                    <div class="header__personal-block">
-                        <svg class="header__personal-icon" width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.91299 3.10869L0.780596 2.15859C0.200337 1.98259 -0.128051 1.36729 0.0471219 0.784288C0.222295 0.201285 0.834692 -0.128656 1.41495 0.0473447L5.8757 1.40035L7.71315 13.6029H18.0253C18.103 13.6029 18.1722 13.5536 18.1979 13.48L18.6839 12.0883C18.7252 11.9703 18.6395 11.8463 18.515 11.8437L11.2281 11.6953C10.6221 11.683 10.1408 11.1794 10.1531 10.5705C10.1654 9.96167 10.6666 9.47809 11.2726 9.49043L19.4 9.65595C19.479 9.65756 19.5501 9.60799 19.5763 9.53306L20.0431 8.1963C20.0849 8.07679 19.9966 7.95168 19.8705 7.95168H11.7536C11.1475 7.95168 10.6561 7.45799 10.6561 6.849C10.6561 6.24001 11.1475 5.74633 11.7536 5.74633H22.4508C22.829 5.74633 23.0938 6.12167 22.9686 6.48021L19.9042 15.255C19.7885 15.5864 19.477 15.8082 19.1275 15.8082H6.53323C6.12619 15.8082 5.78027 15.5093 5.71938 15.1049L3.91299 3.10869Z"/>
-                        <path d="M10.5647 19.1622C10.5647 20.1772 9.74575 21 8.73555 21C7.72534 21 6.9064 20.1772 6.9064 19.1622C6.9064 18.1472 7.72534 17.3244 8.73555 17.3244C9.74575 17.3244 10.5647 18.1472 10.5647 19.1622Z"/>
-                        <path d="M18.6129 19.1622C18.6129 20.1772 17.794 21 16.7838 21C15.7736 21 14.9546 20.1772 14.9546 19.1622C14.9546 18.1472 15.7736 17.3244 16.7838 17.3244C17.794 17.3244 18.6129 18.1472 18.6129 19.1622Z"/>
-                        </svg>
-                        <p class="header__personal-title">Корзина</p>
-                    </div>
-                    <div class="header__personal-block">
-                        <svg class="header__personal-icon" width="17" height="21" viewBox="0 0 17 21" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M13.5158 4.96201C13.5158 7.70246 11.2464 9.92402 8.44688 9.92402C5.64738 9.92402 3.37794 7.70246 3.37794 4.96201C3.37794 2.22157 5.64738 0 8.44688 0C11.2464 0 13.5158 2.22157 13.5158 4.96201Z"/>
-                        <path d="M0 17.0447C0 13.9773 2.5402 11.4906 5.6737 11.4906H12.1429C14.8254 11.4906 17 13.6194 17 16.2453V21H0V17.0447Z"/>
-                        </svg>
-                        <p class="header__personal-title">Войти</p>
-                    </div>
-                </div>
-                <button class="header__language">
-                    <img src="icon/language.svg" alt="language">
-                </button>
+          </div>
+          <div class="header__bottom-right">
+            <div class="header__personal">
+              <div class="header__personal-block">
+                <svg
+                  class="header__personal-icon"
+                  width="18"
+                  height="21"
+                  viewBox="0 0 18 21"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 1.49222C0 0.668092 0.688793 0 1.53846 0H16.4615C17.3112 0 18 0.668091 18 1.49222V20.452C18 20.8815 17.513 21.1436 17.1373 20.9162L9.29861 16.1724C9.11586 16.0618 8.88414 16.0618 8.70139 16.1724L0.862708 20.9162C0.486973 21.1436 0 20.8815 0 20.452V1.49222Z"
+                  />
+                </svg>
+                <p class="header__personal-title">Избранное</p>
+              </div>
+              <div class="header__personal-block">
+                <svg
+                  class="header__personal-icon"
+                  width="23"
+                  height="21"
+                  viewBox="0 0 23 21"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M3.91299 3.10869L0.780596 2.15859C0.200337 1.98259 -0.128051 1.36729 0.0471219 0.784288C0.222295 0.201285 0.834692 -0.128656 1.41495 0.0473447L5.8757 1.40035L7.71315 13.6029H18.0253C18.103 13.6029 18.1722 13.5536 18.1979 13.48L18.6839 12.0883C18.7252 11.9703 18.6395 11.8463 18.515 11.8437L11.2281 11.6953C10.6221 11.683 10.1408 11.1794 10.1531 10.5705C10.1654 9.96167 10.6666 9.47809 11.2726 9.49043L19.4 9.65595C19.479 9.65756 19.5501 9.60799 19.5763 9.53306L20.0431 8.1963C20.0849 8.07679 19.9966 7.95168 19.8705 7.95168H11.7536C11.1475 7.95168 10.6561 7.45799 10.6561 6.849C10.6561 6.24001 11.1475 5.74633 11.7536 5.74633H22.4508C22.829 5.74633 23.0938 6.12167 22.9686 6.48021L19.9042 15.255C19.7885 15.5864 19.477 15.8082 19.1275 15.8082H6.53323C6.12619 15.8082 5.78027 15.5093 5.71938 15.1049L3.91299 3.10869Z"
+                  />
+                  <path
+                    d="M10.5647 19.1622C10.5647 20.1772 9.74575 21 8.73555 21C7.72534 21 6.9064 20.1772 6.9064 19.1622C6.9064 18.1472 7.72534 17.3244 8.73555 17.3244C9.74575 17.3244 10.5647 18.1472 10.5647 19.1622Z"
+                  />
+                  <path
+                    d="M18.6129 19.1622C18.6129 20.1772 17.794 21 16.7838 21C15.7736 21 14.9546 20.1772 14.9546 19.1622C14.9546 18.1472 15.7736 17.3244 16.7838 17.3244C17.794 17.3244 18.6129 18.1472 18.6129 19.1622Z"
+                  />
+                </svg>
+                <p class="header__personal-title">Корзина</p>
+              </div>
+              <div class="header__personal-block">
+                <svg
+                  class="header__personal-icon"
+                  width="17"
+                  height="21"
+                  viewBox="0 0 17 21"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.5158 4.96201C13.5158 7.70246 11.2464 9.92402 8.44688 9.92402C5.64738 9.92402 3.37794 7.70246 3.37794 4.96201C3.37794 2.22157 5.64738 0 8.44688 0C11.2464 0 13.5158 2.22157 13.5158 4.96201Z"
+                  />
+                  <path
+                    d="M0 17.0447C0 13.9773 2.5402 11.4906 5.6737 11.4906H12.1429C14.8254 11.4906 17 13.6194 17 16.2453V21H0V17.0447Z"
+                  />
+                </svg>
+                <p class="header__personal-title">Войти</p>
+              </div>
             </div>
+            <button class="header__language">
+              <img src="icon/language.svg" alt="language" />
+            </button>
+          </div>
         </div>
-    </div>
+      </div>
     </header>
 
     <section class="product">
-        <div class="container">
-            <div class="product__category">
-                <p class="product__category-main">МКЭЛЕКТРО</p>
-                <p class="product__category-arrow">></p>
-                <p class="product__category-name">Каталог</p>
-                <p class="product__category-arrow">></p>
-                <p class="product__category-name">категория</p>
-                <p class="product__category-arrow">></p>
-                <p class="product__category-name">товар</p>
-            </div>
-            <div class="product__heading">
-                <div class="product__heading-inner">
-                    <h2 class="product__title">Название товара</h2>
-                    <h5 class="product__code">#К00023764</h5>
-                    <h5 class="product__code">#К00023764</h5>
-                </div>
-                <div class="product__rating-inner">
-                    <div class="product__rating"><img class="product__rating-img" src="icon/Star.svg" alt=""> <span class="product__rating-value">4.6</span></div>
-                    <div class="product__rating"><img class="product__rating-img" src="icon/comment.svg" alt=""> <span class="product__rating-value">10 отзывов</span></div>
-                </div>
-            </div>
-    
-            <div class="content">
-                <div class="content__inner">
-                    <div class="content__left">
-                    <div class="content__product">
-                        <div class="content__product-top">
-                            <div class="content__product-scroll">
-                                <button class="content__product-scroll-btn">
-                                    <img src="icon/top.svg" alt="arrow">
-                                </button>
-                                <div class="content__product-scroll-imgs">
-                                <img src="img/product-scroll.png" alt="photo" class="content__product-scroll-img">
-                                <img src="img/product-scroll.png" alt="photo" class="content__product-scroll-img">
-                                <img src="img/product-scroll.png" alt="photo" class="content__product-scroll-img">
-                                <img src="img/product-scroll.png" alt="photo" class="content__product-scroll-img">
-                                <img src="img/product-scroll.png" alt="photo" class="content__product-scroll-img">
-                            </div>
-                                <button class="content__product-scroll-btn">
-                                    <img src="icon/bottom.svg" alt="arrow">
-                                </button>
-                            </div>
-                            <div class="content__product-main">
-                                <div class="content__product-main-top">
-                                <div class="hit">Хит</div>
-                                <div class="advice">Советуем</div>
-                            </div>
-                                <img src="img/product-main.png" alt="photo" class="content__product-main-img">
-                            </div>
-                        </div>
-                        <div class="content__product-bottom">
-                            <nav class="content__product-nav">
-                                <button class="content__product-nav-btn">Описание</button>
-                                <button class="content__product-nav-btn">Характеристики</button>
-                                <button class="content__product-nav-btn">Отзывы <span>(9)</span></button>
-                                <button class="content__product-nav-btn">Вопрос ответ <span>(9)</span></button>
-                                <button class="content__product-nav-btn">Документация <span>(9)</span></button>
-                            </nav>
-                            <h5 class="content__product-title">Описание</h5>
-                            <p class="description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
-                    </div>
-                </div>
-
-                    <div class="content__right">
-                    <div class="content__optionally">
-                        <div class="content__optionally-heading">
-                            <div class="price">
-                                <div class="price__line"></div>
-                                <span class="rub">
-                                    ₽
-                                </span>
-                                <span class="price__new">
-                                    999
-                                </span>
-                                <span class="price__old">
-                                    2000
-                                </span>
-                            </div>
-                            <div class="content__optionally-btn">
-                            <button class="btn-red">
-                                <svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0 1.49222C0 0.668092 0.688793 0 1.53846 0H16.4615C17.3112 0 18 0.668091 18 1.49222V20.452C18 20.8815 17.513 21.1436 17.1373 20.9162L9.29861 16.1724C9.11586 16.0618 8.88414 16.0618 8.70139 16.1724L0.862708 20.9162C0.486973 21.1436 0 20.8815 0 20.452V1.49222Z" fill="#fff"/>
-                                </svg>
-                                <p>В избранное</p>
-                            </button>
-                            <button class="btn-share"><img src="icon/share.svg" alt=""></button>
-                        </div>
-                        </div>
-                        <div class="content__optionally-available">
-                            <p>В наличии: 59 шт.</p>
-                            <p>Посмотреть все</p>
-                        </div>
-                        <div class="content__optionally-choice">
-                            <div class="content__optionally-counter">
-                                <button class="content__optionally-counter-btn">
-                                    <img src="icon/left-counter.svg" alt="arrow">
-                                </button>
-                                <p class="content__optionally-counter-number">12</p>
-                                <button class="content__optionally-counter-btn">
-                                    <img src="icon/right-counter.svg" alt="arrow">
-                                </button>
-                            </div>
-                            <a href="#" class="btn-red">Купить</a>
-                            <a href="#" class="btn-white">Позвонить</a>
-                        </div>
-                    <div class="company">
-                        <div class="rectangle"></div>
-                        <span class="company__name">Компания</span>
-                        <div class="company__inner">
-                            <img src="icon/mk.svg" alt="logo">
-                            <div class="company__property">
-                                <h1 class="company__title">Название компании</h1>
-                                <div class="company__rating">
-                                    <span class="company__rating-value">4.6</span>
-                                    <img class="company__rating-img" src="icon/Star.svg" alt="star">
-                                    <img class="company__rating-img" src="icon/Star.svg" alt="star">
-                                    <img class="company__rating-img" src="icon/Star.svg" alt="star">
-                                    <img class="company__rating-img" src="icon/Star.svg" alt="star">
-                                    <img class="company__rating-img" src="icon/Star.svg" alt="star">
-                                    <span class="company__rating-comment">300 отзывов</span>
-                                </div>
-                                <span class="company__quantity">
-                                    Кол-во товаров: 200
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="description-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-                    </p>
-                    <a class="btn-red">Показать товары компании</a>
-                </div>
-                    </div>
-                </div>
-            </div>    
+      <div class="container">
+        <div class="product__category">
+          <p class="product__category-main">МКЭЛЕКТРО</p>
+          <p class="product__category-arrow">></p>
+          <p class="product__category-name">Каталог</p>
+          <p class="product__category-arrow">></p>
+          <p class="product__category-name">категория</p>
+          <p class="product__category-arrow">></p>
+          <p class="product__category-name">товар</p>
         </div>
-       
+        <div class="product__heading">
+          <div class="product__heading-inner">
+            <h2 class="product__title">Название товара</h2>
+            <h5 class="product__code">#К00023764</h5>
+            <h5 class="product__code">#К00023764</h5>
+          </div>
+          <div class="product__rating-inner">
+            <div class="product__rating">
+              <img class="product__rating-img" src="icon/Star.svg" alt="" />
+              <span class="product__rating-value">4.6</span>
+            </div>
+            <div class="product__rating">
+              <img class="product__rating-img" src="icon/comment.svg" alt="" />
+              <span class="product__rating-value">10 отзывов</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="content">
+          <div class="content__inner">
+            <div class="content__left">
+              <div class="content__product">
+                <div class="content__product-top">
+                  <div class="content__product-scroll">
+                    <button class="content__product-scroll-btn btn-top" id="prev">
+                      <img src="icon/top.svg" alt="arrow" />
+                    </button>
+                    <div class="carousel-height">
+                        <div class="content__product-scroll-imgs">
+                            <img
+                              src="img/product-scroll.png"
+                              alt="photo"
+                              class="content__product-scroll-img"
+                            />
+                            <img
+                              src="img/product-scroll.png"
+                              alt="photo"
+                              class="content__product-scroll-img"
+                            />
+                            <img
+                              src="img/product-scroll.png"
+                              alt="photo"
+                              class="content__product-scroll-img"
+                            />
+                            <img
+                              src="img/product-scroll.png"
+                              alt="photo"
+                              class="content__product-scroll-img"
+                            />
+                            <img
+                              src="img/product-scroll.png"
+                              alt="photo"
+                              class="content__product-scroll-img"
+                            />
+                            <img
+                            src="icon/call.svg"
+                            alt="photo"
+                            class="content__product-scroll-img"
+                          />
+                          <img
+                            src="img/product-scroll.png"
+                            alt="photo"
+                            class="content__product-scroll-img"
+                          />
+                          <img
+                            src="img/product-scroll.png"
+                            alt="photo"
+                            class="content__product-scroll-img"
+                          />
+                          <img
+                            src="img/product-scroll.png"
+                            alt="photo"
+                            class="content__product-scroll-img"
+                          />
+                          <img
+                            src="img/product-scroll.png"
+                            alt="photo"
+                            class="content__product-scroll-img"
+                          />
+                          </div>
+                    </div>
+                    
+                    <button class="content__product-scroll-btn btn-bottom " id="next">
+                      <img src="icon/bottom.svg" alt="arrow" />
+                    </button>
+                  </div>
+                  <div class="content__product-main">
+                    <div class="content__product-main-top">
+                      <div class="hit">Хит</div>
+                      <div class="advice">Советуем</div>
+                    </div>
+                    <img
+                      src="img/product-main.png"
+                      alt="photo"
+                      class="content__product-main-img"
+                    />
+                  </div>
+                </div>
+                <div class="content__product-bottom">
+                  <nav class="content__product-nav">
+                    <button class="content__product-nav-btn">
+                        Описание
+                    </button>
+                    <button class="content__product-nav-btn">
+                      Характеристики
+                    </button>
+                    <button class="content__product-nav-btn">
+                      Отзывы <span>(9)</span>
+                    </button>
+                    <button class="content__product-nav-btn">
+                      Вопрос ответ <span>(9)</span>
+                    </button>
+                    <button class="content__product-nav-btn">
+                      Документация <span>(9)</span>
+                    </button>
+                  </nav>
+                  
+                  <div class="tabcontent">
+                    <h5 class="content__product-title">Описание</h5>
+                    <p class="description-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                      do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                      occaecat cupidatat non proident, sunt in culpa qui officia
+                      deserunt mollit anim id est laborum.
+                    </p>
+                  </div>
+                  
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="content__right">
+              <div class="content__optionally">
+                <div class="content__optionally-heading">
+                  <div class="price">
+                    <div class="price__line"></div>
+                    <span class="rub"> ₽ </span>
+                    <span class="price__new"> 999 </span>
+                    <span class="price__old"> 2000 </span>
+                  </div>
+                  <div class="content__optionally-btn">
+                    <button class="btn-red btn-red-flag ">
+                      <svg
+                        width="18"
+                        height="21"
+                        viewBox="0 0 18 21"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 1.49222C0 0.668092 0.688793 0 1.53846 0H16.4615C17.3112 0 18 0.668091 18 1.49222V20.452C18 20.8815 17.513 21.1436 17.1373 20.9162L9.29861 16.1724C9.11586 16.0618 8.88414 16.0618 8.70139 16.1724L0.862708 20.9162C0.486973 21.1436 0 20.8815 0 20.452V1.49222Z"
+                          fill="#fff"
+                        />
+                      </svg>
+                      <p>В избранное</p>
+                    </button>
+
+                    <button class="btn-share " >
+                      <img src="icon/share.svg" alt="" />
+                    </button>
+                    <div class="social-share" style="display: none;">
+                       <a href="#"><svg class="facebook-share" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+                        <image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAPtJREFUOE+Nk0EOgkAMRf8/iS64Bwu9hwvPoQs8hwu4hws8hwu8h0nNHwfSlAFsQsIw9PX3T4cohJndAdQA9gAGAG8APYCOpNZT0C9y4qkEdd8aD5oAZvbIVTfy0/YESQAzuwLQU4oWwDNvXHJbCUKyoZmpz9dCcvpp3CuorARYqj6QrLJC+eKrj8ykQI6XjPMAKZTSGL0AS+Z5wGfJWQEiXed8VMJ45tmnHQCp9UqGUgty/RYHJnsxKyaA+hfZR5o+kgeXqNfoQzJRIysfYvzjQbU2SFuA3yC5IYnzsHaMLclzMtrrjrfQDZI3b0qeAYKa2pkojzpd6Xg6X1SSkab+rUGMAAAAAElFTkSuQmCC" x="0" y="0" width="16" height="16"/>
+                      </svg></a> 
+                      <a href="#"><svg class="whatsapp-share"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+                        <image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAASpJREFUOE+NU8FRwzAQ3KWSUAlxGXoRP00+cQUkFdifxM+Yl8rAqQTRSA5ORkZSwLFmPKOTfKfdvT0iW01nV7hiQ+IJwBqA8x/hBDjUldF4WoyD5mj3JF7zolHsRPBWb80+nE0F2pN9/3lxJn+6GnYvptDIF2iOViGfdS+CA4lnAKu5SvqfIqFypuAjJOthfDZLhygY8xbiMYi0hJJH23b2DMHGIyCKujKD7pcU+NZsYHuyCn/kS/S7ypRNZ9cUqKj3ltMCkrSJKBXFgpaOb/4B1SkVfzsayvtCBKUiTXxC9IkGGRLVw3lnAgji5l1L2pgRvnHdjWe0jQsU1zkY5IpPzzmiVG9NHwr8duKe7uN9auWoEzppiywc3vEaaFIw0H/jLIILHtDn4/wFXLGqEkaUHe0AAAAASUVORK5CYII=" x="0" y="0" width="16" height="16"/>
+                      </svg></a>
+                        <a href="#"> <svg class="telegram-share" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18">
+                            <image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAV9JREFUOE+dlEFOwzAQRf9E3INKcI52kVOkCyLBqlnQcIAKIQ5AYOGuskgXySmQCOcACd8DddBYceQYB5laysb2vBn/PxNCYD3tu0UC5MxYAlgB0HKNCG/EfLgt1r0fRv5GpbrXITiUw+5pJqR3m+zLbowgqYIYAjn/i+Cc6QR8basbQZXqviMB7rWxMgN63nc1M/ITQBKiyyK7oBfVro4geVLM0kQ4MGPnXk7AKcVUQ4QGzO/bYt0IICBDT5XqPmcENtm3m+xBgqVyK2wApAXkizwBDG7WZZGlRk/V5gyqPR0MyK2otwGDCffMuBIxbeAMCALyG1C6WBpNOhplkZ252Wc01SK2ZJ244Dadq9Ncq4gZUfYT4dGKHjLH2D/YGTVf7pOdqo2uBjQ48xHTkf4dJlzK8PpD+y+YPOnX0NrKEmAXMXc9E26Cv5GJxarNQbRkxgIwn1ni4BFoXIA9+wFkC7TqezAaTgAAAABJRU5ErkJggg==" x="0" y="0" width="18" height="18"/>
+                          </svg></a>
+                         
+                          
+                    </div>
+                   
+                  </div>
+                </div>
+                <div class="content__optionally-available">
+                  <p>В наличии: 59 шт.</p>
+                  <button class="watchAll">Посмотреть все</button>
+                  <button class="hiddenAll" style="display: none;">Скрыть</button>
+           
+                </div>
+                <div class="content__availability-hidden" style="display: none;">
+                    <p>Полярная, 57- 17 ед.</p>
+                    <p>Полярная, 57- 17 ед.</p>
+                </div>
+                <div class="content__optionally-choice">
+                  <div class="content__optionally-counter">
+                    <button class="content__optionally-counter-btn btn-minus">
+                      <img src="icon/left-counter.svg" alt="arrow" />
+                    </button>
+                    <p class="content__optionally-counter-number">12</p>
+                    <button class="content__optionally-counter-btn btn-plus">
+                      <img src="icon/right-counter.svg" alt="arrow" />
+                    </button>
+                  </div>
+                  <a href="#" class="btn-red">Купить</a>
+                  <a href="#" class="btn-white">Позвонить</a>
+                </div>
+                <div class="company">
+                  <div class="rectangle"></div>
+                  <span class="company__name">Компания</span>
+                  <div class="company__inner">
+                    <img src="icon/mk.svg" class="mklogo" alt="logo" />
+                    <div class="company__property">
+                      <h1 class="company__title">Название компании</h1>
+                      <div class="company__rating">
+                        <span class="company__rating-value">4.6</span>
+                        <img
+                          class="company__rating-img"
+                          src="icon/Star.svg"
+                          alt="star"
+                        />
+                        <img
+                          class="company__rating-img"
+                          src="icon/Star.svg"
+                          alt="star"
+                        />
+                        <img
+                          class="company__rating-img"
+                          src="icon/Star.svg"
+                          alt="star"
+                        />
+                        <img
+                          class="company__rating-img"
+                          src="icon/Star.svg"
+                          alt="star"
+                        />
+                        <img
+                          class="company__rating-img"
+                          src="icon/Star.svg"
+                          alt="star"
+                        />
+                        <span class="company__rating-comment">300 отзывов</span>
+                      </div>
+                      <span class="company__quantity">
+                        Кол-во товаров: 200
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <p class="description-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut
+                </p>
+                <a class="btn-red">Показать товары компании</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="products">
-        <div class="container">
-            <h3 class="products__title">С этим товаром часто покупают</h3>
+      <div class="container">
+        <h3 class="products__title">С этим товаром часто покупают</h3>
+        <div class="carousel__inner">
+ <img
+            src="icon/left.svg"
+            alt="arrow"
+            class="products__left"
+            style="display: none"
+          />
+          <img
+            src="icon/right.svg"
+            alt="arrow"
+            class="products__right"
+            style="display: flex"
+          />
+          <div class="carousel">
+         
             <div class="products__blocks">
-                <img src="icon/left.svg" alt="arrow" class="products__left">
-                <img src="icon/right.svg" alt="arrow" class="products__right">
-                <div class="products__block">
-                    <div class="products__info">
-                        <div class="products__top">
-                            <div class="products__top-left">
-                            <p class="hit">Хит</p>
-                            <p class="advice">Советуем</p>
-                            </div>
-                            <svg class="products__info-icon products__info-icon--active" width="18" height="21" viewBox="0 0 18 21" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 1.49222C0 0.668092 0.688793 0 1.53846 0H16.4615C17.3112 0 18 0.668091 18 1.49222V20.452C18 20.8815 17.513 21.1436 17.1373 20.9162L9.29861 16.1724C9.11586 16.0618 8.88414 16.0618 8.70139 16.1724L0.862708 20.9162C0.486973 21.1436 0 20.8815 0 20.452V1.49222Z"/>
-                            </svg>
-                        </div>
-                        <h3 class="products__info-title">Lorem ipsum</h3>
-                        <p class="products__info-descrip">Lorem ipsum</p>
-                        <img src="img/product1.png" alt="photo" class="products__info-img">
-                        <div class="products__flex">
-                            <p class="products__flex-text">Цена</p>
-                            <p class="products__flex-number">250 ₽</p>
-                        </div>
-                        <div class="products__flex">
-                            <p class="products__flex-text">Кол-во (шт.)</p>
-                            <p class="products__flex-number">12</p>
-                        </div>
+              <div class="products__block">
+                <div class="products__info">
+                  <div class="products__top">
+                    <div class="products__top-left">
+                      <p class="hit">Хит</p>
+                      <p class="advice">Советуем</p>
                     </div>
+                    <svg
+                      class="products__info-icon products__info-icon--active"
+                      width="18"
+                      height="21"
+                      viewBox="0 0 18 21"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 1.49222C0 0.668092 0.688793 0 1.53846 0H16.4615C17.3112 0 18 0.668091 18 1.49222V20.452C18 20.8815 17.513 21.1436 17.1373 20.9162L9.29861 16.1724C9.11586 16.0618 8.88414 16.0618 8.70139 16.1724L0.862708 20.9162C0.486973 21.1436 0 20.8815 0 20.452V1.49222Z"
+                      />
+                    </svg>
+                  </div>
+                  <h3 class="products__info-title">Lorem ipsum</h3>
+                  <p class="products__info-descrip">Lorem ipsum</p>
+                  <img
+                    src="img/product1.png"
+                    alt="photo"
+                    class="products__info-img"
+                  />
+                  <div class="products__flex">
+                    <p class="products__flex-text">Цена</p>
+                    <p class="products__flex-number">250 ₽</p>
+                  </div>
+                  <div class="products__flex">
+                    <p class="products__flex-text">Кол-во (шт.)</p>
+                    <p class="products__flex-number">12</p>
+                  </div>
                 </div>
-                <div class="products__block">
-                    <div class="products__info">
-                        <h3 class="products__info-title">
-                            <p>Lorem ipsum</p>
-                            <svg class="products__info-icon" width="18" height="21" viewBox="0 0 18 21" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 1.49222C0 0.668092 0.688793 0 1.53846 0H16.4615C17.3112 0 18 0.668091 18 1.49222V20.452C18 20.8815 17.513 21.1436 17.1373 20.9162L9.29861 16.1724C9.11586 16.0618 8.88414 16.0618 8.70139 16.1724L0.862708 20.9162C0.486973 21.1436 0 20.8815 0 20.452V1.49222Z"/>
-                            </svg>
-                        </h3>
-                        <p class="products__info-descrip">Lorem ipsum</p>
-                        <img src="img/product2.png" alt="photo" class="products__info-img">
-                        <div class="products__flex">
-                            <p class="products__flex-text">Цена</p>
-                            <p class="products__flex-number">250 ₽</p>
-                        </div>
-                        <div class="products__flex">
-                            <p class="products__flex-text">Кол-во (шт.)</p>
-                            <p class="products__flex-number">12</p>
-                        </div>
+              </div>
+              <div class="products__block">
+                <div class="products__info">
+                  <h3 class="products__info-title">
+                    <p>Lorem ipsum</p>
+                    <svg
+                      class="products__info-icon"
+                      width="18"
+                      height="21"
+                      viewBox="0 0 18 21"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 1.49222C0 0.668092 0.688793 0 1.53846 0H16.4615C17.3112 0 18 0.668091 18 1.49222V20.452C18 20.8815 17.513 21.1436 17.1373 20.9162L9.29861 16.1724C9.11586 16.0618 8.88414 16.0618 8.70139 16.1724L0.862708 20.9162C0.486973 21.1436 0 20.8815 0 20.452V1.49222Z"
+                      />
+                    </svg>
+                  </h3>
+                  <p class="products__info-descrip">Lorem ipsum</p>
+                  <img
+                    src="img/product2.png"
+                    alt="photo"
+                    class="products__info-img"
+                  />
+                  <div class="products__flex">
+                    <p class="products__flex-text">Цена</p>
+                    <p class="products__flex-number">250 ₽</p>
+                  </div>
+                  <div class="products__flex">
+                    <p class="products__flex-text">Кол-во (шт.)</p>
+                    <p class="products__flex-number">12</p>
+                  </div>
+                </div>
+              </div>
+              <div class="products__block">
+                <div class="products__info">
+                  <div class="products__top">
+                    <div class="products__top-left">
+                      <p class="hit">Хит</p>
+                      <p class="advice">Советуем</p>
                     </div>
+                    <svg
+                      class="products__info-icon"
+                      width="18"
+                      height="21"
+                      viewBox="0 0 18 21"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 1.49222C0 0.668092 0.688793 0 1.53846 0H16.4615C17.3112 0 18 0.668091 18 1.49222V20.452C18 20.8815 17.513 21.1436 17.1373 20.9162L9.29861 16.1724C9.11586 16.0618 8.88414 16.0618 8.70139 16.1724L0.862708 20.9162C0.486973 21.1436 0 20.8815 0 20.452V1.49222Z"
+                      />
+                    </svg>
+                  </div>
+                  <h3 class="products__info-title">Lorem ipsum</h3>
+                  <p class="products__info-descrip">Lorem ipsum</p>
+                  <img
+                    src="img/product3.png"
+                    alt="photo"
+                    class="products__info-img"
+                  />
+                  <div class="products__flex">
+                    <p class="products__flex-text">Цена</p>
+                    <p class="products__flex-number">250 ₽</p>
+                  </div>
+                  <div class="products__flex">
+                    <p class="products__flex-text">Кол-во (шт.)</p>
+                    <p class="products__flex-number">12</p>
+                  </div>
                 </div>
-                <div class="products__block">
-                    <div class="products__info">
-                        <div class="products__top">
-                            <div class="products__top-left">
-                            <p class="hit">Хит</p>
-                            <p class="advice">Советуем</p>
-                            </div>
-                            <svg class="products__info-icon" width="18" height="21" viewBox="0 0 18 21" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 1.49222C0 0.668092 0.688793 0 1.53846 0H16.4615C17.3112 0 18 0.668091 18 1.49222V20.452C18 20.8815 17.513 21.1436 17.1373 20.9162L9.29861 16.1724C9.11586 16.0618 8.88414 16.0618 8.70139 16.1724L0.862708 20.9162C0.486973 21.1436 0 20.8815 0 20.452V1.49222Z"/>
-                            </svg>
-                        </div>
-                        <h3 class="products__info-title">Lorem ipsum</h3>
-                        <p class="products__info-descrip">Lorem ipsum</p>
-                        <img src="img/product3.png" alt="photo" class="products__info-img">
-                        <div class="products__flex">
-                            <p class="products__flex-text">Цена</p>
-                            <p class="products__flex-number">250 ₽</p>
-                        </div>
-                        <div class="products__flex">
-                            <p class="products__flex-text">Кол-во (шт.)</p>
-                            <p class="products__flex-number">12</p>
-                        </div>
-                    </div>
+              </div>
+              <div class="products__block">
+                <div class="products__info">
+                  <h3 class="products__info-title">
+                    <p>Lorem ipsum</p>
+                    <svg
+                      class="products__info-icon"
+                      width="18"
+                      height="21"
+                      viewBox="0 0 18 21"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 1.49222C0 0.668092 0.688793 0 1.53846 0H16.4615C17.3112 0 18 0.668091 18 1.49222V20.452C18 20.8815 17.513 21.1436 17.1373 20.9162L9.29861 16.1724C9.11586 16.0618 8.88414 16.0618 8.70139 16.1724L0.862708 20.9162C0.486973 21.1436 0 20.8815 0 20.452V1.49222Z"
+                      />
+                    </svg>
+                  </h3>
+                  <p class="products__info-descrip">Lorem ipsum</p>
+                  <img
+                    src="img/product4.png"
+                    alt="photo"
+                    class="products__info-img"
+                  />
+                  <div class="products__flex">
+                    <p class="products__flex-text">Цена</p>
+                    <p class="products__flex-number">250 ₽</p>
+                  </div>
+                  <div class="products__flex">
+                    <p class="products__flex-text">Кол-во (шт.)</p>
+                    <p class="products__flex-number">12</p>
+                  </div>
                 </div>
-                <div class="products__block">
-                    <div class="products__info">
-                        <h3 class="products__info-title">
-                            <p>Lorem ipsum</p>
-                            <svg class="products__info-icon" width="18" height="21" viewBox="0 0 18 21" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 1.49222C0 0.668092 0.688793 0 1.53846 0H16.4615C17.3112 0 18 0.668091 18 1.49222V20.452C18 20.8815 17.513 21.1436 17.1373 20.9162L9.29861 16.1724C9.11586 16.0618 8.88414 16.0618 8.70139 16.1724L0.862708 20.9162C0.486973 21.1436 0 20.8815 0 20.452V1.49222Z"/>
-                            </svg>
-                        </h3>
-                        <p class="products__info-descrip">Lorem ipsum</p>
-                        <img src="img/product4.png" alt="photo" class="products__info-img">
-                        <div class="products__flex">
-                            <p class="products__flex-text">Цена</p>
-                            <p class="products__flex-number">250 ₽</p>
-                        </div>
-                        <div class="products__flex">
-                            <p class="products__flex-text">Кол-во (шт.)</p>
-                            <p class="products__flex-number">12</p>
-                        </div>
-                    </div>
+              </div>
+              <div class="products__block">
+                <div class="products__info">
+                  <h3 class="products__info-title">
+                    <p>Lorem ipsum</p>
+                    <svg
+                      class="products__info-icon"
+                      width="18"
+                      height="21"
+                      viewBox="0 0 18 21"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 1.49222C0 0.668092 0.688793 0 1.53846 0H16.4615C17.3112 0 18 0.668091 18 1.49222V20.452C18 20.8815 17.513 21.1436 17.1373 20.9162L9.29861 16.1724C9.11586 16.0618 8.88414 16.0618 8.70139 16.1724L0.862708 20.9162C0.486973 21.1436 0 20.8815 0 20.452V1.49222Z"
+                      />
+                    </svg>
+                  </h3>
+                  <p class="products__info-descrip">Lorem ipsum</p>
+                  <img
+                    src="img/product4.png"
+                    alt="photo"
+                    class="products__info-img"
+                  />
+                  <div class="products__flex">
+                    <p class="products__flex-text">Цена</p>
+                    <p class="products__flex-number">250 ₽</p>
+                  </div>
+                  <div class="products__flex">
+                    <p class="products__flex-text">Кол-во (шт.)</p>
+                    <p class="products__flex-number">12</p>
+                  </div>
                 </div>
+              </div>
+              <div class="products__block">
+                <div class="products__info">
+                  <h3 class="products__info-title">
+                    <p>Lorem ipsum</p>
+                    <svg
+                      class="products__info-icon"
+                      width="18"
+                      height="21"
+                      viewBox="0 0 18 21"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 1.49222C0 0.668092 0.688793 0 1.53846 0H16.4615C17.3112 0 18 0.668091 18 1.49222V20.452C18 20.8815 17.513 21.1436 17.1373 20.9162L9.29861 16.1724C9.11586 16.0618 8.88414 16.0618 8.70139 16.1724L0.862708 20.9162C0.486973 21.1436 0 20.8815 0 20.452V1.49222Z"
+                      />
+                    </svg>
+                  </h3>
+                  <p class="products__info-descrip">Lorem ipsum</p>
+                  <img
+                    src="img/product4.png"
+                    alt="photo"
+                    class="products__info-img"
+                  />
+                  <div class="products__flex">
+                    <p class="products__flex-text">Цена</p>
+                    <p class="products__flex-number">250 ₽</p>
+                  </div>
+                  <div class="products__flex">
+                    <p class="products__flex-text">Кол-во (шт.)</p>
+                    <p class="products__flex-number">12</p>
+                  </div>
+                </div>
+              </div>
+              <div class="products__block">
+                <div class="products__info">
+                  <h3 class="products__info-title">
+                    <p>Lorem ipsum</p>
+                    <svg
+                      class="products__info-icon"
+                      width="18"
+                      height="21"
+                      viewBox="0 0 18 21"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 1.49222C0 0.668092 0.688793 0 1.53846 0H16.4615C17.3112 0 18 0.668091 18 1.49222V20.452C18 20.8815 17.513 21.1436 17.1373 20.9162L9.29861 16.1724C9.11586 16.0618 8.88414 16.0618 8.70139 16.1724L0.862708 20.9162C0.486973 21.1436 0 20.8815 0 20.452V1.49222Z"
+                      />
+                    </svg>
+                  </h3>
+                  <p class="products__info-descrip">Lorem ipsum</p>
+                  <img
+                    src="img/product4.png"
+                    alt="photo"
+                    class="products__info-img"
+                  />
+                  <div class="products__flex">
+                    <p class="products__flex-text">Цена</p>
+                    <p class="products__flex-number">250 ₽</p>
+                  </div>
+                  <div class="products__flex">
+                    <p class="products__flex-text">Кол-во (шт.)</p>
+                    <p class="products__flex-number">12</p>
+                  </div>
+                </div>
+              </div>
+              <div class="products__block">
+                <div class="products__info">
+                  <h3 class="products__info-title">
+                    <p>Lorem ipsum</p>
+                    <svg
+                      class="products__info-icon"
+                      width="18"
+                      height="21"
+                      viewBox="0 0 18 21"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 1.49222C0 0.668092 0.688793 0 1.53846 0H16.4615C17.3112 0 18 0.668091 18 1.49222V20.452C18 20.8815 17.513 21.1436 17.1373 20.9162L9.29861 16.1724C9.11586 16.0618 8.88414 16.0618 8.70139 16.1724L0.862708 20.9162C0.486973 21.1436 0 20.8815 0 20.452V1.49222Z"
+                      />
+                    </svg>
+                  </h3>
+                  <p class="products__info-descrip">Lorem ipsum</p>
+                  <img
+                    src="img/product4.png"
+                    alt="photo"
+                    class="products__info-img"
+                  />
+                  <div class="products__flex">
+                    <p class="products__flex-text">Цена</p>
+                    <p class="products__flex-number">250 ₽</p>
+                  </div>
+                  <div class="products__flex">
+                    <p class="products__flex-text">Кол-во (шт.)</p>
+                    <p class="products__flex-number">12</p>
+                  </div>
+                </div>
+              </div>
+              <div class="products__block">
+                <div class="products__info">
+                  <h3 class="products__info-title">
+                    <p>Lorem ipsum</p>
+                    <svg
+                      class="products__info-icon"
+                      width="18"
+                      height="21"
+                      viewBox="0 0 18 21"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 1.49222C0 0.668092 0.688793 0 1.53846 0H16.4615C17.3112 0 18 0.668091 18 1.49222V20.452C18 20.8815 17.513 21.1436 17.1373 20.9162L9.29861 16.1724C9.11586 16.0618 8.88414 16.0618 8.70139 16.1724L0.862708 20.9162C0.486973 21.1436 0 20.8815 0 20.452V1.49222Z"
+                      />
+                    </svg>
+                  </h3>
+                  <p class="products__info-descrip">Lorem ipsum</p>
+                  <img
+                    src="img/product4.png"
+                    alt="photo"
+                    class="products__info-img"
+                  />
+                  <div class="products__flex">
+                    <p class="products__flex-text">Цена</p>
+                    <p class="products__flex-number">250 ₽</p>
+                  </div>
+                  <div class="products__flex">
+                    <p class="products__flex-text">Кол-во (шт.)</p>
+                    <p class="products__flex-number">12</p>
+                  </div>
+                </div>
+              </div>
+              <div class="products__block">
+                <div class="products__info">
+                  <h3 class="products__info-title">
+                    <p>Lorem ipsum</p>
+                    <svg
+                      class="products__info-icon"
+                      width="18"
+                      height="21"
+                      viewBox="0 0 18 21"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 1.49222C0 0.668092 0.688793 0 1.53846 0H16.4615C17.3112 0 18 0.668091 18 1.49222V20.452C18 20.8815 17.513 21.1436 17.1373 20.9162L9.29861 16.1724C9.11586 16.0618 8.88414 16.0618 8.70139 16.1724L0.862708 20.9162C0.486973 21.1436 0 20.8815 0 20.452V1.49222Z"
+                      />
+                    </svg>
+                  </h3>
+                  <p class="products__info-descrip">Lorem ipsum</p>
+                  <img
+                    src="img/product4.png"
+                    alt="photo"
+                    class="products__info-img"
+                  />
+                  <div class="products__flex">
+                    <p class="products__flex-text">Цена</p>
+                    <p class="products__flex-number">250 ₽</p>
+                  </div>
+                  <div class="products__flex">
+                    <p class="products__flex-text">Кол-во (шт.)</p>
+                    <p class="products__flex-number">12</p>
+                  </div>
+                </div>
+              </div>
+              <div class="products__block">
+                <div class="products__info">
+                  <h3 class="products__info-title">
+                    <p>Lorem ipsum</p>
+                    <svg
+                      class="products__info-icon"
+                      width="18"
+                      height="21"
+                      viewBox="0 0 18 21"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 1.49222C0 0.668092 0.688793 0 1.53846 0H16.4615C17.3112 0 18 0.668091 18 1.49222V20.452C18 20.8815 17.513 21.1436 17.1373 20.9162L9.29861 16.1724C9.11586 16.0618 8.88414 16.0618 8.70139 16.1724L0.862708 20.9162C0.486973 21.1436 0 20.8815 0 20.452V1.49222Z"
+                      />
+                    </svg>
+                  </h3>
+                  <p class="products__info-descrip">Lorem ipsum</p>
+                  <img
+                    src="img/product4.png"
+                    alt="photo"
+                    class="products__info-img"
+                  />
+                  <div class="products__flex">
+                    <p class="products__flex-text">Цена</p>
+                    <p class="products__flex-number">250 ₽</p>
+                  </div>
+                  <div class="products__flex">
+                    <p class="products__flex-text">Кол-во (шт.)</p>
+                    <p class="products__flex-number">12</p>
+                  </div>
+                </div>
+              </div>
+              <div class="products__block">
+                <div class="products__info">
+                  <h3 class="products__info-title">
+                    <p>Lorem ipsum</p>
+                    <svg
+                      class="products__info-icon"
+                      width="18"
+                      height="21"
+                      viewBox="0 0 18 21"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 1.49222C0 0.668092 0.688793 0 1.53846 0H16.4615C17.3112 0 18 0.668091 18 1.49222V20.452C18 20.8815 17.513 21.1436 17.1373 20.9162L9.29861 16.1724C9.11586 16.0618 8.88414 16.0618 8.70139 16.1724L0.862708 20.9162C0.486973 21.1436 0 20.8815 0 20.452V1.49222Z"
+                      />
+                    </svg>
+                  </h3>
+                  <p class="products__info-descrip">Lorem ipsum</p>
+                  <img
+                    src="img/product4.png"
+                    alt="photo"
+                    class="products__info-img"
+                  />
+                  <div class="products__flex">
+                    <p class="products__flex-text">Цена</p>
+                    <p class="products__flex-number">250 ₽</p>
+                  </div>
+                  <div class="products__flex">
+                    <p class="products__flex-text">Кол-во (шт.)</p>
+                    <p class="products__flex-number">12</p>
+                  </div>
+                </div>
+              </div>
+              <div class="products__block">
+                <div class="products__info">
+                  <h3 class="products__info-title">
+                    <p>Lorem ipsum</p>
+                    <svg
+                      class="products__info-icon"
+                      width="18"
+                      height="21"
+                      viewBox="0 0 18 21"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 1.49222C0 0.668092 0.688793 0 1.53846 0H16.4615C17.3112 0 18 0.668091 18 1.49222V20.452C18 20.8815 17.513 21.1436 17.1373 20.9162L9.29861 16.1724C9.11586 16.0618 8.88414 16.0618 8.70139 16.1724L0.862708 20.9162C0.486973 21.1436 0 20.8815 0 20.452V1.49222Z"
+                      />
+                    </svg>
+                  </h3>
+                  <p class="products__info-descrip">Lorem ipsum</p>
+                  <img
+                    src="img/product4.png"
+                    alt="photo"
+                    class="products__info-img"
+                  />
+                  <div class="products__flex">
+                    <p class="products__flex-text">Цена</p>
+                    <p class="products__flex-number">250 ₽</p>
+                  </div>
+                  <div class="products__flex">
+                    <p class="products__flex-text">Кол-во (шт.)</p>
+                    <p class="products__flex-number">12</p>
+                  </div>
+                </div>
+              </div>
+              <div class="products__block">
+                <div class="products__info">
+                  <h3 class="products__info-title">
+                    <p>Lorem ipsum</p>
+                    <svg
+                      class="products__info-icon"
+                      width="18"
+                      height="21"
+                      viewBox="0 0 18 21"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 1.49222C0 0.668092 0.688793 0 1.53846 0H16.4615C17.3112 0 18 0.668091 18 1.49222V20.452C18 20.8815 17.513 21.1436 17.1373 20.9162L9.29861 16.1724C9.11586 16.0618 8.88414 16.0618 8.70139 16.1724L0.862708 20.9162C0.486973 21.1436 0 20.8815 0 20.452V1.49222Z"
+                      />
+                    </svg>
+                  </h3>
+                  <p class="products__info-descrip">Lorem ipsum</p>
+                  <img
+                    src="img/product4.png"
+                    alt="photo"
+                    class="products__info-img"
+                  />
+                  <div class="products__flex">
+                    <p class="products__flex-text">Цена</p>
+                    <p class="products__flex-number">250 ₽</p>
+                  </div>
+                  <div class="products__flex">
+                    <p class="products__flex-text">Кол-во (шт.)</p>
+                    <p class="products__flex-number">12</p>
+                  </div>
+                </div>
+              </div>
+              <div class="products__block">
+                <div class="products__info">
+                  <h3 class="products__info-title">
+                    <p>Lorem ipsum</p>
+                    <svg
+                      class="products__info-icon"
+                      width="18"
+                      height="21"
+                      viewBox="0 0 18 21"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 1.49222C0 0.668092 0.688793 0 1.53846 0H16.4615C17.3112 0 18 0.668091 18 1.49222V20.452C18 20.8815 17.513 21.1436 17.1373 20.9162L9.29861 16.1724C9.11586 16.0618 8.88414 16.0618 8.70139 16.1724L0.862708 20.9162C0.486973 21.1436 0 20.8815 0 20.452V1.49222Z"
+                      />
+                    </svg>
+                  </h3>
+                  <p class="products__info-descrip">Lorem ipsum</p>
+                  <img
+                    src="img/product4.png"
+                    alt="photo"
+                    class="products__info-img"
+                  />
+                  <div class="products__flex">
+                    <p class="products__flex-text">Цена</p>
+                    <p class="products__flex-number">250 ₽</p>
+                  </div>
+                  <div class="products__flex">
+                    <p class="products__flex-text">Кол-во (шт.)</p>
+                    <p class="products__flex-number">12</p>
+                  </div>
+                </div>
+              </div>
+              <div class="products__block">
+                <div class="products__info">
+                  <h3 class="products__info-title">
+                    <p>Lorem ipsum</p>
+                    <svg
+                      class="products__info-icon"
+                      width="18"
+                      height="21"
+                      viewBox="0 0 18 21"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 1.49222C0 0.668092 0.688793 0 1.53846 0H16.4615C17.3112 0 18 0.668091 18 1.49222V20.452C18 20.8815 17.513 21.1436 17.1373 20.9162L9.29861 16.1724C9.11586 16.0618 8.88414 16.0618 8.70139 16.1724L0.862708 20.9162C0.486973 21.1436 0 20.8815 0 20.452V1.49222Z"
+                      />
+                    </svg>
+                  </h3>
+                  <p class="products__info-descrip">Lorem ipsum</p>
+                  <img
+                    src="img/product4.png"
+                    alt="photo"
+                    class="products__info-img"
+                  />
+                  <div class="products__flex">
+                    <p class="products__flex-text">Цена</p>
+                    <p class="products__flex-number">250 ₽</p>
+                  </div>
+                  <div class="products__flex">
+                    <p class="products__flex-text">Кол-во (шт.)</p>
+                    <p class="products__flex-number">12</p>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+       
+      </div>
     </section>
 
     <section class="questions">
-        <div class="container">
-            <div class="questions__inner">
-                <h3 class="questions__title">Часто задаваемые вопросы</h3>
-                <div class="questions__block">
-                    <div>
-                    <div class="questions__block-question">
-                        <p>Могу ли я вернуть средства если товар мне не подошел?</p>
-                        <svg class="questions__block-bottom" width="17" height="8" viewBox="0 0 17 8" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.338078 1.63282L7.68381 7.71985C8.13458 8.09338 8.86542 8.09338 9.31619 7.71985L16.6619 1.63282C17.1127 1.25929 17.1127 0.653679 16.6619 0.280149C16.2112 -0.0933819 15.4803 -0.093382 15.0295 0.280149L8.5 5.69084L1.97046 0.280148C1.51969 -0.0933826 0.788849 -0.0933826 0.338078 0.280148C-0.112693 0.653679 -0.112693 1.25929 0.338078 1.63282Z"/>
-                        </svg>
-                        <svg class="questions__block-top"style="display: none;" width="17" height="8" viewBox="0 0 17 8" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.6619 6.36718L9.31619 0.280148C8.86542 -0.0933825 8.13458 -0.0933824 7.68381 0.280148L0.338077 6.36718C-0.112692 6.74071 -0.112692 7.34632 0.338078 7.71985C0.788849 8.09338 1.51969 8.09338 1.97046 7.71985L8.5 2.30916L15.0295 7.71985C15.4803 8.09338 16.2112 8.09338 16.6619 7.71985C17.1127 7.34632 17.1127 6.74071 16.6619 6.36718Z"/>
-                        </svg>
-                        </div>
-                    </div>
-                    <p class="questions__block-answer questions__block-answer--display">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-
-                <div class="questions__block">
-                    <div>
-                    <div class="questions__block-question">
-                        <p>Могу ли я вернуть средства если товар мне не подошел?</p>
-                        <svg class="questions__block-bottom" width="17" height="8" viewBox="0 0 17 8" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.338078 1.63282L7.68381 7.71985C8.13458 8.09338 8.86542 8.09338 9.31619 7.71985L16.6619 1.63282C17.1127 1.25929 17.1127 0.653679 16.6619 0.280149C16.2112 -0.0933819 15.4803 -0.093382 15.0295 0.280149L8.5 5.69084L1.97046 0.280148C1.51969 -0.0933826 0.788849 -0.0933826 0.338078 0.280148C-0.112693 0.653679 -0.112693 1.25929 0.338078 1.63282Z"/>
-                        </svg>
-                        <svg class="questions__block-top"style="display: none;" width="17" height="8" viewBox="0 0 17 8" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.6619 6.36718L9.31619 0.280148C8.86542 -0.0933825 8.13458 -0.0933824 7.68381 0.280148L0.338077 6.36718C-0.112692 6.74071 -0.112692 7.34632 0.338078 7.71985C0.788849 8.09338 1.51969 8.09338 1.97046 7.71985L8.5 2.30916L15.0295 7.71985C15.4803 8.09338 16.2112 8.09338 16.6619 7.71985C17.1127 7.34632 17.1127 6.74071 16.6619 6.36718Z"/>
-                        </svg>
-                        </div>
-                    </div>
-                    <p class="questions__block-answer questions__block-answer--display">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
+      <div class="container">
+        <div class="questions__inner">
+          <h3 class="questions__title">Часто задаваемые вопросы</h3>
+          <div class="questions__block">
+            <div>
+              <div class="questions__block-question">
+                <p>Могу ли я вернуть средства если товар мне не подошел?</p>
+                <svg
+                  class="questions__block-bottom"
+                  width="17"
+                  height="8"
+                  viewBox="0 0 17 8"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0.338078 1.63282L7.68381 7.71985C8.13458 8.09338 8.86542 8.09338 9.31619 7.71985L16.6619 1.63282C17.1127 1.25929 17.1127 0.653679 16.6619 0.280149C16.2112 -0.0933819 15.4803 -0.093382 15.0295 0.280149L8.5 5.69084L1.97046 0.280148C1.51969 -0.0933826 0.788849 -0.0933826 0.338078 0.280148C-0.112693 0.653679 -0.112693 1.25929 0.338078 1.63282Z"
+                  />
+                </svg>
+                <svg
+                  class="questions__block-top"
+                  style="display: none"
+                  width="17"
+                  height="8"
+                  viewBox="0 0 17 8"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M16.6619 6.36718L9.31619 0.280148C8.86542 -0.0933825 8.13458 -0.0933824 7.68381 0.280148L0.338077 6.36718C-0.112692 6.74071 -0.112692 7.34632 0.338078 7.71985C0.788849 8.09338 1.51969 8.09338 1.97046 7.71985L8.5 2.30916L15.0295 7.71985C15.4803 8.09338 16.2112 8.09338 16.6619 7.71985C17.1127 7.34632 17.1127 6.74071 16.6619 6.36718Z"
+                  />
+                </svg>
+              </div>
             </div>
+            <p class="questions__block-answer" style="display: none">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+
+          <div class="questions__block">
+            <div>
+              <div class="questions__block-question">
+                <p>Могу ли я вернуть средства если товар мне не подошел?</p>
+                <svg
+                  class="questions__block-bottom"
+                  width="17"
+                  height="8"
+                  viewBox="0 0 17 8"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0.338078 1.63282L7.68381 7.71985C8.13458 8.09338 8.86542 8.09338 9.31619 7.71985L16.6619 1.63282C17.1127 1.25929 17.1127 0.653679 16.6619 0.280149C16.2112 -0.0933819 15.4803 -0.093382 15.0295 0.280149L8.5 5.69084L1.97046 0.280148C1.51969 -0.0933826 0.788849 -0.0933826 0.338078 0.280148C-0.112693 0.653679 -0.112693 1.25929 0.338078 1.63282Z"
+                  />
+                </svg>
+                <svg
+                  class="questions__block-top"
+                  style="display: none"
+                  width="17"
+                  height="8"
+                  viewBox="0 0 17 8"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M16.6619 6.36718L9.31619 0.280148C8.86542 -0.0933825 8.13458 -0.0933824 7.68381 0.280148L0.338077 6.36718C-0.112692 6.74071 -0.112692 7.34632 0.338078 7.71985C0.788849 8.09338 1.51969 8.09338 1.97046 7.71985L8.5 2.30916L15.0295 7.71985C15.4803 8.09338 16.2112 8.09338 16.6619 7.71985C17.1127 7.34632 17.1127 6.74071 16.6619 6.36718Z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <p class="questions__block-answer" style="display: none">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <footer class="footer">
-
-        <div class="container">
-            <div class="footer__inner">
-                <div class="footer__info">
-                    <a href="index.html"><img src="icon/logo.svg" alt="logo" class="logo"></a>
-                    <p class="footer__descrip">Оптово-розничная сеть и интернет-магазин электротехнической продукции с доставкой по РФ и СНГ.</p>
-                    <div class="footer__social">
-                        <svg class="footer__social-email" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.00012 0C1.79098 0 0.00012207 1.79086 0.00012207 4V22C0.00012207 24.2091 1.79098 26 4.00012 26H22.0001C24.2093 26 26.0001 24.2091 26.0001 22V4C26.0001 1.79086 24.2093 0 22.0001 0H4.00012ZM25.039 5.77808C25.3052 6.06526 25.2882 6.51386 25.001 6.78005L19.2624 12.0991C18.8683 12.4645 18.8576 13.0845 19.2389 13.4632L25.0355 19.2198C25.3134 19.4958 25.3149 19.9447 25.039 20.2225C24.7631 20.5004 24.3142 20.5019 24.0363 20.226L18.1173 14.3478C17.7675 14.0004 17.213 13.9859 16.8084 14.2673C15.5124 15.1685 14.1288 15.568 12.7241 15.5144C11.35 15.4619 10.0074 14.978 8.7528 14.185C8.34739 13.9287 7.81174 13.9726 7.48329 14.322L1.96715 20.1914C1.69899 20.4768 1.25028 20.4907 0.964936 20.2225C0.679595 19.9544 0.665673 19.5056 0.933841 19.2203L6.36771 13.4385C6.71832 13.0654 6.70824 12.481 6.34498 12.1203L0.968406 6.78077C0.690562 6.50484 0.689009 6.05592 0.964937 5.77808C1.24086 5.50023 1.68979 5.49868 1.96763 5.77461L8.46301 12.2252C9.87987 13.3913 11.3567 14.0431 12.7783 14.0974C14.1872 14.1512 15.6326 13.6223 17.0163 12.2482C17.0201 12.2444 17.024 12.2406 17.0279 12.2368C17.0299 12.235 17.0319 12.2331 17.0339 12.2313L24.037 5.74006C24.3242 5.47387 24.7728 5.49089 25.039 5.77808Z" fill="#CC222E"/>
-                        </svg>
-                        <svg class="footer__social-telegram" width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M19.2097 0.150081C19.2097 0.150081 21.1523 -0.585776 20.9904 1.20131C20.9365 1.93717 20.4508 4.51267 20.0731 7.29843L18.778 15.5506C18.778 15.5506 18.6701 16.7595 17.6987 16.9697C16.7274 17.1799 15.2704 16.2339 15.0006 16.0236C14.7847 15.8659 10.9534 13.5007 9.60431 12.3443C9.22655 12.0289 8.79486 11.3982 9.65826 10.6623L15.3244 5.40624C15.9719 4.77549 16.6195 3.30378 13.9213 5.09086L6.36655 10.0842C6.36655 10.0842 5.50315 10.6098 3.8843 10.1368L0.376711 9.08552C0.376711 9.08552 -0.918395 8.29711 1.29408 7.50865C6.69035 5.03826 13.3278 2.51532 19.2097 0.150081Z" fill="#fff"/>
-                        </svg>
-                        <svg class="footer__social-youtube" width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.61328 0C2.40414 0 0.613281 1.79086 0.613281 4V22C0.613281 24.2091 2.40414 26 4.61328 26H22.6133C24.8224 26 26.6133 24.2091 26.6133 22V4C26.6133 1.79086 24.8224 0 22.6133 0H4.61328ZM17.5005 12.8278C17.716 12.6785 17.716 12.36 17.5005 12.2107L11.3128 7.92369C11.0638 7.75122 10.7236 7.92939 10.7236 8.23223V16.8062C10.7236 17.1091 11.0638 17.2872 11.3128 17.1148L17.5005 12.8278Z" fill="#CC222E"/>
-                        </svg>                     
-                        <svg class="footer__social-vk" width="27" height="14" viewBox="0 0 27 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14.0936 13.1136C5.1459 13.8222 1.04478 4.98899 0.0476606 0.236157C0.0216357 0.112107 0.117704 0 0.244454 0H4.76885C4.86431 0 4.94685 0.0684171 4.96743 0.161627C5.80232 3.94338 7.74633 5.68508 9.03077 6.192C9.16477 6.24489 9.29687 6.13087 9.27977 5.98784C9.10341 4.51291 8.90825 1.96312 9.31729 1.57204C9.62538 1.27748 9.2299 0.793183 8.77734 0.410032C8.62343 0.279728 8.711 0 8.91267 0H14.5964C14.7078 0 14.7981 0.0902813 14.7981 0.201649V6.0865C14.7981 6.19787 14.889 6.28903 15 6.27982C17.434 6.07789 18.7558 2.25208 19.1524 0.165897C19.1707 0.069614 19.2542 0 19.3522 0H25.9291C26.0905 0 26.1865 0.180211 26.0964 0.314164L21.4605 7.20899C21.4099 7.28416 21.4157 7.3838 21.4746 7.45262L26.0229 12.7676C26.1348 12.8984 26.0419 13.1003 25.8697 13.1003H19.8116C19.7597 13.1003 19.7098 13.0803 19.6723 13.0444L16.5007 10.0121C16.4632 9.97626 16.4133 9.95624 16.3614 9.95624H14.9676C14.8696 9.95624 14.7858 10.0267 14.7689 10.1233L14.2765 12.9481C14.2608 13.0379 14.1844 13.1064 14.0936 13.1136Z" fill="#fff"/>
-                        </svg>
-                        <svg class="footer__social-instagram" width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.613281 4C0.613281 1.79086 2.40414 0 4.61328 0H22.6133C24.8224 0 26.6133 1.79086 26.6133 4V22C26.6133 24.2091 24.8224 26 22.6133 26H4.61328C2.40414 26 0.613281 24.2091 0.613281 22V4ZM13.6135 16.7485C15.6836 16.7485 17.3618 15.0704 17.3618 13.0003C17.3618 10.9302 15.6836 9.25202 13.6135 9.25202C11.5434 9.25202 9.86528 10.9302 9.86528 13.0003C9.86528 15.0704 11.5434 16.7485 13.6135 16.7485ZM13.6135 18.5717C16.6905 18.5717 19.185 16.0773 19.185 13.0003C19.185 9.92325 16.6905 7.42883 13.6135 7.42883C10.5365 7.42883 8.0421 9.92325 8.0421 13.0003C8.0421 16.0773 10.5365 18.5717 13.6135 18.5717ZM20.4223 6.19055C21.1061 6.19055 21.6604 5.63623 21.6604 4.95245C21.6604 4.26867 21.1061 3.71436 20.4223 3.71436C19.7386 3.71436 19.1842 4.26867 19.1842 4.95245C19.1842 5.63623 19.7386 6.19055 20.4223 6.19055Z" fill="#CC222E"/>
-                        </svg>
-                    </div>
-                </div>
-                <nav class="footer__nav">
-                    <ul class="footer__list">
-                        <a href="#"><li class="footer__item-title">Информация</li></a>
-                        <a href="#"><li class="footer__item">Способы оплаты</li></a>
-                        <a href="#"><li class="footer__item">Пользовательское
-                            соглашение</li></a>
-                        <a href="#"><li class="footer__item">Политика
-                            конфиденциальности</li></a>
-                        <a href="#"><li class="footer__item">Статьи и обзоры</li></a>
-                        <a href="#"><li class="footer__item">Производители и бренды</li></a>
-                        <a href="#"><li class="footer__item">Архив товаров</li></a>
-                    </ul>
-                    <ul class="footer__list">
-                        <a href="#"><li class="footer__item-title">Сервисы</li></a>
-                        <a href="#"><li class="footer__item">Корзина</li></a>
-                        <a href="#"><li class="footer__item">Авторизация</li></a>
-                        <a href="#"><li class="footer__item">Настройки аккаунта</li></a>
-                        <a href="#"><li class="footer__item">Мой адрес</li></a>
-                        <a href="#"><li class="footer__item">Мои заказы</li></a>
-                        <a href="#"><li class="footer__item">Поиск на сайте</li></a>
-                        <a href="#"><li class="footer__item">Карта сайта</li></a>
-                    </ul>
-                    <ul class="footer__list">
-                        <a href="#"><li class="footer__item-title">Компания</li></a>
-                        <a href="#"><li class="footer__item">Краткая информация</li></a>
-                        <a href="#"><li class="footer__item">История</li></a>
-                        <a href="#"><li class="footer__item">Реквизиты</li></a>
-                        <a href="#"><li class="footer__item">Новости</li></a>
-                        <a href="#"><li class="footer__item">Адреса магазинов</li></a>
-                        <a href="#"><li class="footer__item">Отзывы</li></a>
-                    </ul>
-                </nav>
-                <div class="footer__call">
-                    <h5 class="footer__call-title">Контакты</h5>
-                    <p>8 800 100-54-41</p>
-                    <p>8 984 707-97-98</p>
-                </div>
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__info">
+            <a href="index.html"
+              ><img src="icon/logo.svg" alt="logo" class="logo"
+            /></a>
+            <p class="footer__descrip">
+              Оптово-розничная сеть и интернет-магазин электротехнической
+              продукции с доставкой по РФ и СНГ.
+            </p>
+            <div class="footer__social">
+              <svg
+                class="footer__social-email"
+                width="26"
+                height="26"
+                viewBox="0 0 26 26"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M4.00012 0C1.79098 0 0.00012207 1.79086 0.00012207 4V22C0.00012207 24.2091 1.79098 26 4.00012 26H22.0001C24.2093 26 26.0001 24.2091 26.0001 22V4C26.0001 1.79086 24.2093 0 22.0001 0H4.00012ZM25.039 5.77808C25.3052 6.06526 25.2882 6.51386 25.001 6.78005L19.2624 12.0991C18.8683 12.4645 18.8576 13.0845 19.2389 13.4632L25.0355 19.2198C25.3134 19.4958 25.3149 19.9447 25.039 20.2225C24.7631 20.5004 24.3142 20.5019 24.0363 20.226L18.1173 14.3478C17.7675 14.0004 17.213 13.9859 16.8084 14.2673C15.5124 15.1685 14.1288 15.568 12.7241 15.5144C11.35 15.4619 10.0074 14.978 8.7528 14.185C8.34739 13.9287 7.81174 13.9726 7.48329 14.322L1.96715 20.1914C1.69899 20.4768 1.25028 20.4907 0.964936 20.2225C0.679595 19.9544 0.665673 19.5056 0.933841 19.2203L6.36771 13.4385C6.71832 13.0654 6.70824 12.481 6.34498 12.1203L0.968406 6.78077C0.690562 6.50484 0.689009 6.05592 0.964937 5.77808C1.24086 5.50023 1.68979 5.49868 1.96763 5.77461L8.46301 12.2252C9.87987 13.3913 11.3567 14.0431 12.7783 14.0974C14.1872 14.1512 15.6326 13.6223 17.0163 12.2482C17.0201 12.2444 17.024 12.2406 17.0279 12.2368C17.0299 12.235 17.0319 12.2331 17.0339 12.2313L24.037 5.74006C24.3242 5.47387 24.7728 5.49089 25.039 5.77808Z"
+                  fill="#CC222E"
+                />
+              </svg>
+              <svg
+                class="footer__social-telegram"
+                width="21"
+                height="17"
+                viewBox="0 0 21 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19.2097 0.150081C19.2097 0.150081 21.1523 -0.585776 20.9904 1.20131C20.9365 1.93717 20.4508 4.51267 20.0731 7.29843L18.778 15.5506C18.778 15.5506 18.6701 16.7595 17.6987 16.9697C16.7274 17.1799 15.2704 16.2339 15.0006 16.0236C14.7847 15.8659 10.9534 13.5007 9.60431 12.3443C9.22655 12.0289 8.79486 11.3982 9.65826 10.6623L15.3244 5.40624C15.9719 4.77549 16.6195 3.30378 13.9213 5.09086L6.36655 10.0842C6.36655 10.0842 5.50315 10.6098 3.8843 10.1368L0.376711 9.08552C0.376711 9.08552 -0.918395 8.29711 1.29408 7.50865C6.69035 5.03826 13.3278 2.51532 19.2097 0.150081Z"
+                  fill="#fff"
+                />
+              </svg>
+              <svg
+                class="footer__social-youtube"
+                width="27"
+                height="26"
+                viewBox="0 0 27 26"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M4.61328 0C2.40414 0 0.613281 1.79086 0.613281 4V22C0.613281 24.2091 2.40414 26 4.61328 26H22.6133C24.8224 26 26.6133 24.2091 26.6133 22V4C26.6133 1.79086 24.8224 0 22.6133 0H4.61328ZM17.5005 12.8278C17.716 12.6785 17.716 12.36 17.5005 12.2107L11.3128 7.92369C11.0638 7.75122 10.7236 7.92939 10.7236 8.23223V16.8062C10.7236 17.1091 11.0638 17.2872 11.3128 17.1148L17.5005 12.8278Z"
+                  fill="#CC222E"
+                />
+              </svg>
+              <svg
+                class="footer__social-vk"
+                width="27"
+                height="14"
+                viewBox="0 0 27 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.0936 13.1136C5.1459 13.8222 1.04478 4.98899 0.0476606 0.236157C0.0216357 0.112107 0.117704 0 0.244454 0H4.76885C4.86431 0 4.94685 0.0684171 4.96743 0.161627C5.80232 3.94338 7.74633 5.68508 9.03077 6.192C9.16477 6.24489 9.29687 6.13087 9.27977 5.98784C9.10341 4.51291 8.90825 1.96312 9.31729 1.57204C9.62538 1.27748 9.2299 0.793183 8.77734 0.410032C8.62343 0.279728 8.711 0 8.91267 0H14.5964C14.7078 0 14.7981 0.0902813 14.7981 0.201649V6.0865C14.7981 6.19787 14.889 6.28903 15 6.27982C17.434 6.07789 18.7558 2.25208 19.1524 0.165897C19.1707 0.069614 19.2542 0 19.3522 0H25.9291C26.0905 0 26.1865 0.180211 26.0964 0.314164L21.4605 7.20899C21.4099 7.28416 21.4157 7.3838 21.4746 7.45262L26.0229 12.7676C26.1348 12.8984 26.0419 13.1003 25.8697 13.1003H19.8116C19.7597 13.1003 19.7098 13.0803 19.6723 13.0444L16.5007 10.0121C16.4632 9.97626 16.4133 9.95624 16.3614 9.95624H14.9676C14.8696 9.95624 14.7858 10.0267 14.7689 10.1233L14.2765 12.9481C14.2608 13.0379 14.1844 13.1064 14.0936 13.1136Z"
+                  fill="#fff"
+                />
+              </svg>
+              <svg
+                class="footer__social-instagram"
+                width="27"
+                height="26"
+                viewBox="0 0 27 26"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M0.613281 4C0.613281 1.79086 2.40414 0 4.61328 0H22.6133C24.8224 0 26.6133 1.79086 26.6133 4V22C26.6133 24.2091 24.8224 26 22.6133 26H4.61328C2.40414 26 0.613281 24.2091 0.613281 22V4ZM13.6135 16.7485C15.6836 16.7485 17.3618 15.0704 17.3618 13.0003C17.3618 10.9302 15.6836 9.25202 13.6135 9.25202C11.5434 9.25202 9.86528 10.9302 9.86528 13.0003C9.86528 15.0704 11.5434 16.7485 13.6135 16.7485ZM13.6135 18.5717C16.6905 18.5717 19.185 16.0773 19.185 13.0003C19.185 9.92325 16.6905 7.42883 13.6135 7.42883C10.5365 7.42883 8.0421 9.92325 8.0421 13.0003C8.0421 16.0773 10.5365 18.5717 13.6135 18.5717ZM20.4223 6.19055C21.1061 6.19055 21.6604 5.63623 21.6604 4.95245C21.6604 4.26867 21.1061 3.71436 20.4223 3.71436C19.7386 3.71436 19.1842 4.26867 19.1842 4.95245C19.1842 5.63623 19.7386 6.19055 20.4223 6.19055Z"
+                  fill="#CC222E"
+                />
+              </svg>
+            </div>
+          </div>
+          <nav class="footer__nav">
+            <ul class="footer__list">
+              <a href="#"><li class="footer__item-title">Информация</li></a>
+              <a href="#"><li class="footer__item">Способы оплаты</li></a>
+              <a href="#"
+                ><li class="footer__item">Пользовательское соглашение</li></a
+              >
+              <a href="#"
+                ><li class="footer__item">Политика конфиденциальности</li></a
+              >
+              <a href="#"><li class="footer__item">Статьи и обзоры</li></a>
+              <a href="#"
+                ><li class="footer__item">Производители и бренды</li></a
+              >
+              <a href="#"><li class="footer__item">Архив товаров</li></a>
+            </ul>
+            <ul class="footer__list">
+              <a href="#"><li class="footer__item-title">Сервисы</li></a>
+              <a href="#"><li class="footer__item">Корзина</li></a>
+              <a href="#"><li class="footer__item">Авторизация</li></a>
+              <a href="#"><li class="footer__item">Настройки аккаунта</li></a>
+              <a href="#"><li class="footer__item">Мой адрес</li></a>
+              <a href="#"><li class="footer__item">Мои заказы</li></a>
+              <a href="#"><li class="footer__item">Поиск на сайте</li></a>
+              <a href="#"><li class="footer__item">Карта сайта</li></a>
+            </ul>
+            <ul class="footer__list">
+              <a href="#"><li class="footer__item-title">Компания</li></a>
+              <a href="#"><li class="footer__item">Краткая информация</li></a>
+              <a href="#"><li class="footer__item">История</li></a>
+              <a href="#"><li class="footer__item">Реквизиты</li></a>
+              <a href="#"><li class="footer__item">Новости</li></a>
+              <a href="#"><li class="footer__item">Адреса магазинов</li></a>
+              <a href="#"><li class="footer__item">Отзывы</li></a>
+            </ul>
+          </nav>
+          <div class="footer__call">
+            <h5 class="footer__call-title">Контакты</h5>
+            <p>8 800 100-54-41</p>
+            <p>8 984 707-97-98</p>
+          </div>
         </div>
         <p class="footer__bottom">© 2012-2024 МК ЭЛЕКТРО.</p>
-        </div>
+      </div>
     </footer>
-</body>
+    <script src="carousel.js"></script>
+    <script src="qa.js"></script>
+    <script src="counter.js"></script>
+    <script src="carosel-height.js"></script>
+    <script src="btn.js"></script>
+    <script src="availability.js"></script>
+    <script src="tab.js"></script>
+  </body>
 </html>
