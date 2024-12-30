@@ -770,6 +770,147 @@ body {
     }
 }
 
+/* CHARASTERISTIC */
+
+.characteristiс {
+    &__title {
+        @include px18;
+        padding-bottom: 8px;
+    }
+    &__list {
+        padding-bottom: 10px;
+        &-name {
+            position: relative;
+            display: block;
+            overflow: hidden;
+            color: $gray;
+            @include px18;
+            font-weight: 400;
+        }
+        &-name::after {
+            content: '';
+            position: absolute;
+            bottom: .35em;
+            width: 100%;
+            border-bottom: .1em dotted;
+        }
+        &-value {
+        float: right;
+        @include px18;
+        font-weight: 400;
+        }
+        &-last {
+            padding-bottom: 0 !important;
+        }
+    }
+    &__list:last-child {
+        padding-bottom: 20px;
+    }
+}
+
+/* REWIEVS */
+
+.reviews {
+    .description-text {
+        padding-bottom: 0;
+    }
+    &__procents {
+        padding: 10px 0 14px 0;
+    }
+    &__procent {
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding-bottom: 5px;
+        &-number {
+            font-size: 16px;
+            line-height: 22.4px;
+        }
+        &-gray {
+            height: 4px;
+            width: 100%;
+            border-radius: 44px;
+            background-color: rgba(226, 229, 242, 1);
+            margin: 0 5px 0 2px;
+        }
+        &-red {
+            height: 4px;
+            width: 351px;
+            border-radius: 44px;
+            background-color: $red;
+            position: absolute;
+            top: 9px;
+            left: 13px;
+            &-fourth {
+                width: 140px;
+            }
+            &-third {
+                width: 75px;
+            }
+            &-second {
+                width: 4px;
+                background-color: rgba(144, 150, 167, 1);
+            }
+            &-first {
+                width: 4px;
+                background-color: rgba(144, 150, 167, 1);
+            }
+        }
+    }
+    &__procent:last-child {
+        padding-bottom: 0;
+    }
+    &__filter {
+        display: flex;
+        justify-content: right;
+        column-gap: 8px;
+        @include px16;
+        padding-bottom: 15px;
+    }
+    &__review {
+        padding: 15px 20px 20px 20px;
+        border: 1px solid rgba(223, 227, 238, 1);
+        border-radius: 12px;
+    }
+    &__autor {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 11px;
+        &-left {
+            display: flex;
+            column-gap: 8px;
+        }
+        &-name {
+            @include px18;
+            font-weight: 700;
+        }
+        &-date {
+            font-size: 14px;
+            line-height: 16.71px;
+            color: $gray;
+        }
+    }
+    &__buttons {
+        display: flex;
+        column-gap: 20px;
+        padding-bottom: 11px;
+        &-btn {
+            padding: 3px 10px;
+            border-radius: $red;
+            border-radius: 4px;
+            color: #fff;
+            background-color: rgba(144, 150, 167, 1);
+            font-size: 14px;
+            line-height: 16.71px;
+            font-weight: 600;
+        }
+    }
+}
+.tabcontent {
+    padding: 20px 30px 30px 30px;
+    border: 1px solid rgba(223, 227, 238, 1);
+    border-radius: 12px;
+}
 
 .mklogo{
     padding: 12px 0;
