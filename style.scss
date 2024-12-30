@@ -860,13 +860,6 @@ body {
     &__procent:last-child {
         padding-bottom: 0;
     }
-    &__filter {
-        display: flex;
-        justify-content: right;
-        column-gap: 8px;
-        @include px16;
-        padding-bottom: 15px;
-    }
     &__review {
         padding: 15px 20px 20px 20px;
         border: 1px solid rgba(223, 227, 238, 1);
@@ -906,6 +899,154 @@ body {
         }
     }
 }
+
+/* CONNECT */
+
+.connect {
+    .btn-red {
+        width: 119px;
+        max-height: 40px;
+    }
+    .description-text {
+        font-weight: 400;
+        padding-bottom: 15px;
+    }
+    .btn-white {
+        width: 147px;
+    }
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        &-right {
+            display: flex;
+            column-gap: 20px;
+        }
+    }
+    &__block {
+        padding: 15px 20px 20px 20px;
+        border: 1px solid rgba(223, 227, 238, 1);
+        border-radius: 12px;
+        margin-bottom: 15px;
+    }
+    &__block:last-child {
+        margin-bottom: 0;
+    }
+    &__name {
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        &-text {
+            @include px18;
+            font-weight: 700;
+        }
+        &-date {
+            font-size: 14px;
+            line-height: 16.71px;
+            color: $gray;
+        }
+    }
+    &__answers {
+        display: flex;
+        column-gap: 8px;
+        font-size: 14px;
+        line-height: 16.71px;
+        padding: 15px;
+        &-amount {
+            color: $gray;
+        }
+        &-show {
+            color: $red;
+        }
+    }
+    &__field {
+        display: flex;
+        column-gap: 10px;
+    }
+    &__input {
+        width: 416px;
+        height: 40px;
+        background-color: rgba(232, 234, 243, 1);
+        border-radius: 6px;
+        @include px16;
+    }
+    &__input::placeholder {
+        padding-left: 15px;
+        color: $gray;
+    }
+    &__answer {
+        padding-bottom: 15px;
+        &-top {
+            display: flex;
+            column-gap: 8px;
+            padding-bottom: 9px
+        }
+        &-name {
+            @include px16;
+            font-weight: 700;
+        }
+        &-date {
+            font-size: 14px;
+            line-height: 16.71px;
+            color: $gray;
+        }
+        &-descrip {
+            font-size: 14px;
+            line-height: 16.71px;
+            color: $gray;
+        }
+    }
+}
+
+/* DOCUMENT */
+
+.document {
+    &__column {
+        &-name {
+            @include px18;
+            padding-bottom: 11px;
+        }
+        &-doc {
+            display: flex;
+            column-gap: 8px;
+            fill: $gray;
+            padding-bottom: 10px;
+        }
+        &-docs {
+            padding-bottom: 30px;
+            display: inline-block;
+            padding-right: 50px;
+        }
+        &-docs:last-child {
+            padding-bottom: 0;
+        }
+        &-doc:last-child {
+            padding-bottom: 0;
+        }
+        &-doc:hover {
+            fill: $red;
+        }
+        &-link {
+            color: $gray;
+            @include px18;
+            font-weight: 400;
+        }
+        &-link:hover {
+            color: $red;
+        }
+    }
+}
+
+.filter {
+    display: flex;
+    white-space: nowrap;
+    column-gap: 8px;
+    @include px16;
+    padding-bottom: 15px;
+    &-arrow {
+        max-width: 15px;
+    }
+}
 .tabcontent {
     padding: 20px 30px 30px 30px;
     border: 1px solid rgba(223, 227, 238, 1);
@@ -935,7 +1076,7 @@ body {
     border-radius: 6px;
     color: #fff;
     max-height: 40px;
-    max-width: 230px;
+    width: 230px;
 }
 .btn-share {
     padding: 7px 8px;
