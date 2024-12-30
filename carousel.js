@@ -1,28 +1,34 @@
-const gap = 16;
+const gap3 = 16;
 
-const carousel = document.querySelector(".carousel"),
-  content = document.querySelector(".products__blocks"),
-  next = document.querySelector(".products__right"),
-  prev = document.querySelector(".products__left");
+const carousel3 = document.querySelector(".carousel"),
+  content3 = document.querySelector(".products__blocks"),
+  next3 = document.querySelector(".products__right"),
+  prev3 = document.querySelector(".products__left");
 
-next.addEventListener("click", e => {
-  carousel.scrollBy(width + gap, 0);
-  if (carousel.scrollWidth !== 0) {
-    prev.style.display = "flex";
+
+
+next3.addEventListener("click", e => {
+  carousel3.scrollBy(width3 + gap3, 0);
+  if (carousel3.scrollWidth !== 0) {
+    prev3.style.display = "flex";
+   
   }
-  if (content.scrollWidth - width - gap <= carousel.scrollLeft + width) {
-    next.style.display = "none";
+  if (content3.scrollWidth - width3 - gap3 <= carousel3.scrollLeft + width3) {
+    next3.style.display = "none";
+   
   }
 });
-prev.addEventListener("click", e => {
-  carousel.scrollBy(-(width + gap), 0);
-  if (carousel.scrollLeft - width - gap <= 0) {
-    prev.style.display = "none";
+prev3.addEventListener("click", e => {
+  carousel3.scrollBy(-(width3 + gap3), 0);
+  if (carousel3.scrollLeft - width3 - gap3 <= 0) {
+    prev3.style.display = "none";
+    
   }
-  if (!content.scrollWidth - width - gap <= carousel.scrollLeft + width) {
-    next.style.display = "flex";
+  if (!content3.scrollWidth - width3 - gap3 <= carousel3.scrollLeft + width3) {
+    next3.style.display = "flex";
+
   }
 });
 
-let width = carousel.offsetWidth;
-window.addEventListener("resize", e => (width = carousel.offsetWidth));
+let width3 = carousel3.offsetWidth;
+window.addEventListener("resize", e => (width3 = carousel3.offsetWidth));

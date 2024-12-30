@@ -180,9 +180,9 @@
               <div class="content__product">
                 <div class="content__product-top">
                   <div class="content__product-scroll">
-                    <button class="content__product-scroll-btn btn-top" id="prev">
-                      <img src="icon/top.svg" alt="arrow" />
-                    </button>
+                    
+                    <img class="btn-top" src="img/btn-top.png" alt="">
+                    <img class="btn-top-grey"  style="display: none;"  src="img/btn-top-grey.png" alt="">
                     <div class="carousel-height">
                         <div class="content__product-scroll-imgs">
                             <img
@@ -236,11 +236,9 @@
                             class="content__product-scroll-img"
                           />
                           </div>
-                    </div>
-                    
-                    <button class="content__product-scroll-btn btn-bottom " id="next">
-                      <img src="icon/bottom.svg" alt="arrow" />
-                    </button>
+                    </div>          
+                    <img class="btn-bottom" style="display: none;" src="img/btn-bottom.png" alt="">
+                    <img class="btn-bottom-grey"  src="img/btn-bottom-grey.png" alt="">
                   </div>
                   <div class="content__product-main">
                     <div class="content__product-main-top">
@@ -256,6 +254,7 @@
                 </div>
                 <div class="content__product-bottom">
                   <nav class="content__product-nav">
+
                     <button class="content__product-nav-btn">
                         Описание
                     </button>
@@ -449,6 +448,31 @@
                       <div class="reviews__buttons">
                         <button class="reviews__buttons-btn">Коментарий</button>
                         <button class="reviews__buttons-btn">Достоинства</button>
+                      </div>
+                      <div class="comment-photo">
+                        <img style="display: none;" class="comment-photo-btn comment-photo-btn-l" src="img/btn-left.png" alt="">
+                        <img  class="comment-photo-btn comment-photo-btn-l comment-photo-btn-l-grey" src="img/btn-left-grey.png" alt="">
+                        <img class="comment-photo-btn comment-photo-btn-r" src="img/btn-right.png" alt="">
+                        <img style="display: none;" class="comment-photo-btn comment-photo-btn-r comment-photo-btn-r-grey" src="img/btn-right-grey.png" alt="">
+                        <img class="rectangle-comment" src="img/rectangle-comment.png" alt="">
+                        <div class="carousel2">
+                          <div class="comment-photo__inner">
+                            <img class="comment-photo__img" src="img/comment-video.png" alt="">
+                            <img class="comment-photo__img" src="img/comment-photo.png" alt="">
+                            <img class="comment-photo__img" src="img/comment-photo.png" alt="">
+                            <img class="comment-photo__img" src="img/comment-photo.png" alt="">
+                            <img class="comment-photo__img" src="img/comment-photo.png" alt="">
+                            <img class="comment-photo__img" src="img/comment-photo.png" alt="">
+                            <img class="comment-photo__img" src="img/comment-photo.png" alt="">
+                            <img class="comment-photo__img" src="img/comment-photo.png" alt="">
+                            <img class="comment-photo__img" src="img/comment-photo.png" alt="">
+                            <img class="comment-photo__img" src="img/comment-photo.png" alt="">
+                            <img class="comment-photo__img" src="img/comment-photo.png" alt="">
+                            <img class="comment-photo__img" src="img/comment-photo.png" alt="">
+                            <img class="comment-photo__img" src="img/comment-photo.png" alt="">
+                            <img class="comment-photo__img" src="img/comment-photo.png" alt="">
+                          </div>
+                        </div>
                       </div>
                       <p class="description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</p>
                     </div>
@@ -1589,5 +1613,6 @@
     <script src="availability.js"></script>
     <script src="tab.js"></script>
     <script src="popap.js"></script>
+    <script src="carosel-comment.js"></script>
   </body>
 </html>

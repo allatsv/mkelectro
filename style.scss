@@ -539,6 +539,7 @@ body {
 .popap-filter{
     
     position: absolute;
+    z-index: 200;
     right: 0;
     padding: 10px;
     border-radius: 10px;
@@ -1258,4 +1259,55 @@ body {
 .tabcontent{
     transition: 0.3s;
 
+}
+
+
+.comment-photo{
+    position: relative;
+    
+}
+.carousel2{
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.comment-photo__inner{
+    display: grid;
+    grid-gap: 10px;
+    grid-auto-flow: column;
+    margin: auto;
+    box-sizing: border-box;
+	position: relative;
+    max-width: 560px;
+}
+.comment-photo__img{
+    min-width: 65px;
+    
+}
+.comment-photo__img:first-child{
+    margin-left: 30px;
+    
+}
+
+.comment-photo__img:last-child{
+    margin-right: 30px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+
+}
+
+.comment-photo-btn{
+    position: absolute;
+    z-index: 100;
+}
+.comment-photo-btn-l{
+
+}
+.comment-photo-btn-r{
+    right: 0;
+}
+.rectangle-comment{
+    position: absolute;
+    right: 0;
+    z-index: 2;
 }
