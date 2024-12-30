@@ -491,8 +491,10 @@ body {
                 
                 display: grid;
                 grid-gap: 16px;
+                grid-auto-flow: row;
                 margin: auto;
                 box-sizing: border-box;
+                position: relative;
             }
         }
         &-main {
@@ -1310,4 +1312,13 @@ body {
     position: absolute;
     right: 0;
     z-index: 2;
+}
+@media (max-width: 575.98px){
+    .content__inner{
+        display: block;
+    }
+    .content__product-main{
+        margin: 0 auto;
+    }
+    
 }
