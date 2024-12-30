@@ -63,8 +63,8 @@
               ><img src="icon/logo.svg" alt="logo" class="logo"
             /></a>
             <a href="#" class="btn-white">Свяжитесь с нами</a>
-            <button class="btn-red">
-              <img src="" alt="" class="header__catalog-icon" />
+            <button style="display: flex; align-items: center; max-width: 109px;" class="btn-red">
+              <img style="margin-right: 8px;" src="img/burger.png" alt="" class="header__catalog-icon" />
               <p>Каталог</p>
             </button>
             <div class="header__field">
@@ -416,6 +416,12 @@
                       <p class="filter-text">Сначала новые</p>
                       <img src="icon/arrow-reviews.svg" alt="arrow" class="filter-arrow">
                     </div>
+                    <div class="popap-filter popap-display">
+                      <div class="popap-filter__item">Сначала новые</div>
+                      <div class="popap-filter__item">Сначала старые</div>
+                      <div class="popap-filter__item">Сначала лучшие</div>
+                      <div class="popap-filter__item">Сначала худшие</div>
+                    </div>
                     <div class="reviews__review">
                       <div class="reviews__autor">
                         <div class="reviews__autor-left">
@@ -478,7 +484,7 @@
                     </div>
                     </div>
                   </div>
-                  <div class="tabcontent">
+                  <div class="tabcontent  tabcontent--border">
                     <div class="connect">
                       <div class="connect__top">
                         <h5 class="content__product-title">Вопрос ответ</h5>
@@ -1582,5 +1588,6 @@
     <script src="btn.js"></script>
     <script src="availability.js"></script>
     <script src="tab.js"></script>
+    <script src="popap.js"></script>
   </body>
 </html>

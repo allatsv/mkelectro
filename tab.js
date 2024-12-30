@@ -23,6 +23,10 @@ window.addEventListener('DOMContentLoaded', function() {
 
       header.addEventListener('click', function(event) {
         let target = event.target;
+        tab.forEach(function(elem){
+          elem.classList.remove('border-red')
+        })
+        target.classList.add('border-red')
         
         if (target && target.classList.contains('content__product-nav-btn')) {
           

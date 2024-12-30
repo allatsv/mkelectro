@@ -272,7 +272,12 @@ body {
 }
 
 /* PRODUCT */
-
+.btn-red-flag{
+    max-width: 135px;
+    p{
+        width: 111px;
+    }
+}
 .product {
     padding: 30px 0;
     .description-text {
@@ -281,10 +286,12 @@ body {
     }
     .btn-red {
         display: flex;
+        justify-content: center;
         column-gap: 8px;
         max-height: 30px;
         padding: 5px 10px 6px 10px;
         align-items: center;
+        cursor: pointer;
     }
     &__category {
         display: flex;
@@ -377,13 +384,14 @@ body {
         padding: 30px;
         border: 1px solid rgba(223, 227, 238, 1);
         border-radius: 12px;
-        max-height: 784px;
+        
     }
     &__right {
         padding: 30px;
         border: 1px solid rgba(223, 227, 238, 1);
         border-radius: 12px;
         max-height: 522px;
+        min-width: 415px;
     }
     &__inner {
         display: flex;
@@ -496,14 +504,18 @@ body {
         }
         &-nav {
             display: flex;
+            justify-content: space-between;
             padding-bottom: 13px;
             border-bottom: 1px solid rgba(226, 229, 242, 1);
             margin-bottom: 20px;
+            max-height: 30px;
+            box-sizing: border-box;
             &-btn {
                 font-size: 15px;
                 line-height: 17.9px;
                 font-weight: 600;
-                padding-right: 19px;
+                padding-bottom: 27px;
+               
             }
             &-btn:last-child {
                 padding-right: 0;
@@ -520,6 +532,40 @@ body {
             padding-bottom: 15px;
         }
     }
+}
+.popap-display{
+    display: none;
+}
+.popap-filter{
+    
+    position: absolute;
+    right: 0;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(246, 248, 253, 1);
+    width: 172px;
+    text-align: center;
+    &__item{
+        cursor: pointer;
+        padding: 13px 0;
+        color: black;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19.09px;
+          
+    }
+    &__item:last-child{
+        padding-bottom: 13px
+          
+    }
+    &__item:hover{
+        background-color: rgba(222, 0, 43, 1);
+        color: white;
+        border-radius: 8px;
+    }
+}
+.border-red{
+    border-bottom: solid 1px red;
 }
 .company {
     position: relative;
@@ -790,7 +836,7 @@ body {
         &-name::after {
             content: '';
             position: absolute;
-            bottom: .35em;
+            bottom: .15em;
             width: 100%;
             border-bottom: .1em dotted;
         }
@@ -811,6 +857,7 @@ body {
 /* REWIEVS */
 
 .reviews {
+    position: relative;
     .description-text {
         padding-bottom: 0;
     }
@@ -864,6 +911,7 @@ body {
         padding: 15px 20px 20px 20px;
         border: 1px solid rgba(223, 227, 238, 1);
         border-radius: 12px;
+        margin-bottom: 15px;
     }
     &__autor {
         display: flex;
@@ -1012,6 +1060,7 @@ body {
             fill: $gray;
             padding-bottom: 10px;
         }
+       
         &-docs {
             padding-bottom: 30px;
             display: inline-block;
@@ -1039,6 +1088,7 @@ body {
 
 .filter {
     display: flex;
+    justify-content: end;
     white-space: nowrap;
     column-gap: 8px;
     @include px16;
@@ -1048,10 +1098,15 @@ body {
     }
 }
 .tabcontent {
-    padding: 20px 30px 30px 30px;
-    border: 1px solid rgba(223, 227, 238, 1);
-    border-radius: 12px;
-}
+    &--{
+        border: 1px solid rgba(223, 227, 238, 1);
+        border-radius: 12px;
+        padding: 20px 30px 30px 30px;
+    }
+    
+        
+       
+    }
 
 .mklogo{
     padding: 12px 0;
@@ -1068,6 +1123,8 @@ body {
     border-radius: 6px;
     padding: 10px 15px 11px 15px;
     max-height: 40px;
+    width: 164px;
+    white-space: nowrap;
 }
 .btn-red {
     @include px16;

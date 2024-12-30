@@ -255,6 +255,13 @@ body {
 }
 
 /* PRODUCT */
+.btn-red-flag {
+  max-width: 135px;
+}
+.btn-red-flag p {
+  width: 111px;
+}
+
 .product {
   padding: 30px 0;
 }
@@ -264,11 +271,13 @@ body {
 }
 .product .btn-red {
   display: flex;
+  justify-content: center;
   -moz-column-gap: 8px;
        column-gap: 8px;
   max-height: 30px;
   padding: 5px 10px 6px 10px;
   align-items: center;
+  cursor: pointer;
 }
 .product__category {
   display: flex;
@@ -381,13 +390,13 @@ body {
   padding: 30px;
   border: 1px solid rgb(223, 227, 238);
   border-radius: 12px;
-  max-height: 784px;
 }
 .content__right {
   padding: 30px;
   border: 1px solid rgb(223, 227, 238);
   border-radius: 12px;
   max-height: 522px;
+  min-width: 415px;
 }
 .content__inner {
   display: flex;
@@ -505,15 +514,18 @@ body {
 }
 .content__product-nav {
   display: flex;
+  justify-content: space-between;
   padding-bottom: 13px;
   border-bottom: 1px solid rgb(226, 229, 242);
   margin-bottom: 20px;
+  max-height: 30px;
+  box-sizing: border-box;
 }
 .content__product-nav-btn {
   font-size: 15px;
   line-height: 17.9px;
   font-weight: 600;
-  padding-right: 19px;
+  padding-bottom: 27px;
 }
 .content__product-nav-btn:last-child {
   padding-right: 0;
@@ -529,6 +541,40 @@ body {
   line-height: 26.25px;
   font-weight: 700;
   padding-bottom: 15px;
+}
+
+.popap-display {
+  display: none;
+}
+
+.popap-filter {
+  position: absolute;
+  right: 0;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(246, 248, 253);
+  width: 172px;
+  text-align: center;
+}
+.popap-filter__item {
+  cursor: pointer;
+  padding: 13px 0;
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.09px;
+}
+.popap-filter__item:last-child {
+  padding-bottom: 13px;
+}
+.popap-filter__item:hover {
+  background-color: rgb(222, 0, 43);
+  color: white;
+  border-radius: 8px;
+}
+
+.border-red {
+  border-bottom: solid 1px red;
 }
 
 .company {
@@ -819,7 +865,7 @@ body {
 .characteristiс__list-name::after {
   content: "";
   position: absolute;
-  bottom: 0.35em;
+  bottom: 0.15em;
   width: 100%;
   border-bottom: 0.1em dotted;
 }
@@ -838,6 +884,9 @@ body {
 }
 
 /* REWIEVS */
+.reviews {
+  position: relative;
+}
 .reviews .description-text {
   padding-bottom: 0;
 }
@@ -891,6 +940,7 @@ body {
   padding: 15px 20px 20px 20px;
   border: 1px solid rgb(223, 227, 238);
   border-radius: 12px;
+  margin-bottom: 15px;
 }
 .reviews__autor {
   display: flex;
@@ -1080,6 +1130,7 @@ body {
 
 .filter {
   display: flex;
+  justify-content: end;
   white-space: nowrap;
   -moz-column-gap: 8px;
        column-gap: 8px;
@@ -1092,10 +1143,10 @@ body {
   max-width: 15px;
 }
 
-.tabcontent {
-  padding: 20px 30px 30px 30px;
+.tabcontent-- {
   border: 1px solid rgb(223, 227, 238);
   border-radius: 12px;
+  padding: 20px 30px 30px 30px;
 }
 
 .mklogo {
@@ -1117,6 +1168,8 @@ body {
   border-radius: 6px;
   padding: 10px 15px 11px 15px;
   max-height: 40px;
+  width: 164px;
+  white-space: nowrap;
 }
 
 .btn-red {
